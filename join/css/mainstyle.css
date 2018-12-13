@@ -1,0 +1,404 @@
+body{
+	font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    padding-top: 80px;
+    line-height: 1.7;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar.fixed-top{
+    padding:20px 150px;
+    background-color: #f8f9fb;
+}
+
+.btn.btn-t{
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.header{
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding: 50px 20px;
+    background-size: cover;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 34px;
+    color: #3E4D61;
+}
+
+h2.subtitle{
+    font-size: 26px;
+    color: #4A4A4A;
+}
+
+h3{
+    font-weight: 700;
+    color: #006ECC; 
+    font-size: 28px;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 22px;
+    color: #3E4D61;
+    line-height: 1.4;
+}
+
+h5{
+    color:#fff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.btn{
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 80px;
+    border: none;
+}
+
+.privilege{
+    background-image: url(../images/right-bg.svg),url(../images/left-bg.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 30%, 0 80%;
+}
+
+.privilege h3, .module h3{
+    width:85%;
+}
+
+.privilege .row.my-5{
+    margin-top: 80px!important;
+    margin-bottom: 80px!important;
+}
+
+.privilege img{
+    width: 80%;
+}
+
+.pricing{
+    width: 70%;
+    margin: auto;
+}
+
+.pricing h1{
+    font-weight: 700;
+    font-size: 39px;
+    color: #006ECC;
+    text-align: center;
+}
+
+.pricing .card{
+    background: #EFF3F7;
+}
+
+.price1 .badge{
+    width: 100px;
+    margin: auto;
+    font-size: 18px;
+    position: relative;
+    top: -15px;
+}
+
+.price3 .card-body{
+    padding-top: 46px;
+}
+
+.move-up{
+    margin-top: -100px;
+}
+
+.bonuses .container{
+    width: 70%;
+}
+
+.module ul{
+    width: 70%;
+    color:#3E4D61;
+}
+
+.module ul li{
+    margin-bottom: 20px;
+}
+
+.number{
+    background: #4E69A2;
+    border-radius: 0.8em;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em; 
+}
+
+.dark-bg{
+    background: #3E4D61;
+    padding: 30px 10px 100px;
+    color: #fff;
+}
+
+.dark-bg h3{
+    color:#fff;
+}
+
+.dark-bg h4{
+    color: #D3EDFF;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.faq .btn{
+    font-weight: 700;
+    font-size: 17px;
+    color: #4E69A2;
+    padding: 0px;
+    text-align: left;
+    white-space: inherit;
+
+}
+
+.faq .card{
+    border:none;
+}
+
+.faq .card-header{
+    background: #EFF3F7;
+    border:none;
+}
+
+.faq .card-body{
+    font-size: 16px;
+}
+
+.faq .btn.collapsed:before{
+    float: left !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f055";
+    font-weight: 900;   
+}
+
+.faq .btn:before{
+    float: left !important;
+    font-family: "Font Awesome 5 Free";
+    content: "\f056";
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: #4E69A2;
+    font-weight: 900;
+}
+
+.testimonial, .about, .featured{
+    padding: 50px 10px 0;
+}
+
+.testimonial{
+    background-image: url(../images/right-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.about{
+    background-image: url(../images/left-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.testimonial .card{
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(59,73,93,0.10);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.testimonial .card img{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+ @-moz-document url-prefix() {
+        .testimonial .card img  {
+            width: 200px;
+            height: 250px;
+        }
+    }
+
+.fred{
+    background-image: url(../images/fred.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 370px;
+}
+
+.footer{
+    background-image: linear-gradient(-90deg, #052748 0%, #132C40 47%, #07171D 100%);
+    padding: 30px 10px;
+}
+
+.footer, .footer a{
+    font-size: 14px;
+    color:#FFF; 
+}
+
+.mobile{
+    display: none;
+}
+
+.fancy {
+  margin-bottom: 40px;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../images/Asset3.svg);
+  background-repeat: no-repeat;
+  background-position: 48% 50%;
+  background-size: contain;
+  font-size: 40px;
+
+}
+
+.fancy.green{
+  margin-bottom: 10px;
+  margin-top: 50px;
+  background-image: url(../images/Asset1.svg);
+  background-repeat: no-repeat;
+  background-position: 48% 50%;
+  background-size: contain;
+}
+
+p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
+
+.spots{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.count{
+    color: #E26474;
+}
+
+.red{
+    color: #ce2137;
+}
+
+.blue{
+    color:#2ca4ff;
+}
+
+
+@media only screen and (max-width: 1493px){
+.bonuses .media-body.mt-3{margin-top: 0!important;}
+}
+
+@media only screen and (max-width: 1440px){
+.navbar.fixed-top{padding:20px 80px;}
+}
+
+@media only screen and (max-width: 1199px){
+.featured .container {width: 1300px;}
+.btn{padding:20px 30px;}
+}
+
+@media only screen and (max-width:991px) {
+    .header{padding:30px 0 10px;}
+    h1, .fancy{font-size: 28px;}
+    h2.subtitle{font-size:20px;}
+    h3{font-size: 22px;}
+    .privilege.mt-5{margin-top: 20px!important;}
+    .privilege img{width:50%;}
+    .privilege h3{width: 100%; margin-bottom: 20px!important;}
+    .privilege .row.my-5{margin-bottom: 10px!important;margin-top: 10px!important;}
+    .module h3{width: 100%;}
+    .dark-bg h4{font-size: 20px;}
+    .featured img{margin-right: 30px;}
+    .fred{height: 450px;}
+    .about{font-size: 16px;}
+    .pricing{width: 100%;}
+    .module .container, .bonuses .container{width: 100%;}
+    .module ul{width: 100%; font-size: 16px;}
+    .spots{font-size: 24px;}
+}
+
+@media only screen and (max-width:767px) {
+    body{font-size: 16px;}
+    .navbar.fixed-top{padding:10px 20px;}
+    .btn.btn-t{font-size: 16px;}
+    .logo{width: 100px;}
+    h1{font-size: 24px;}
+    h2.subtitle{font-size: 18px;}
+    h2.mb-5{margin-bottom: 20px!important;}
+    .header ul{width: 100%; font-size: 16px;}
+    .featured img{margin-right: 0;}
+    h3{font-size: 20px;}
+    h4{font-size: 18px;}
+    .countdown .pt-3{padding-bottom: 10px;}
+    .about{padding-top: 20px;}
+    .about h4{text-align: center;}
+    .fred{height: 250px;}
+    .pricing.card-deck{display: block;}
+    .btn{padding: 10px 40px;font-size: 20px;}
+    .module ul li{margin-bottom: 10px;}
+    .bonuses .media{display: block;}
+    .bonuses .media img{display:block; margin: auto!important;}
+    .dark-bg h4{font-size: 18px; margin-top: 20px!important;}
+    .dark-bg h3.mb-5{margin-bottom: 20px!important;}
+}
+
+@media only screen and (max-width: 675px){
+    .spots{font-size: 20px;}
+    .fancy{margin-top:20px;margin-bottom: 20px;}
+    .fancy.green {margin-top:20px;}
+}
+
+@media only screen and (max-width: 575px){
+    .testimonial .flex-sm-row{flex-direction: row;}
+    .testimonial .card-body{font-size: 14px;}
+    h1{font-size: 20px;}
+    h2.subtitle{font-size: 16px;}
+    h3, .dark-bg h4, h5{font-size: 18px;}
+    body{font-size: 16px;}
+    .header ul img{width: 30px;}
+    h4.mb-5{margin-bottom: 20px!important;}
+    .btn{font-size: 16px;padding: 10px 20px;}
+    .featured .container{width: 100%;}
+    .faq .btn:before{padding-bottom: 26px;}
+    .spots{display: none;}
+    .spots.mobile, .btn-t.mobile{display: block;}
+    .btn-t.mobile{margin-left: 80px;}
+    .header{padding: 10px;}
+    body{padding-top: 105px;}
+}
+
+@media only screen and (max-width: 454px){
+    .testimonial img{display: none;}
+    .testimonial .card-body{display: block!important;}
+    .testimonial .card-body small{display: flex;}
+    .testimonial .card-body .text-dark{margin-top: 50px;}
+    img.mobile{float: left; display: block!important; width:60px!important;height: 80px!important;}
+    .btn-t.mobile{margin-left: 10px;}
+}
+
+@media only screen and (max-width: 425px){
+    .mobile {display: block!important;}
+    div.mt-5{margin-top: 20px!important;}
+    div.my-4{margin-bottom: 10px!important;margin-top:10px!important;}  
+    .btn{font-size: 14px;padding: 10px;}
+    .featured .container{width: 90%;}
+    h5{font-size: 16px;}
+}
+@media only screen and (max-width: 320px){
+    .btn{font-size: 12px;}
+}

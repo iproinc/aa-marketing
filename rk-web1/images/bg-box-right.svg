@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="398px" viewBox="0 0 1440 398" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>bg-box-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="398"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(0.000000, -1573.000000)">
+            <g id="About" transform="translate(0.000000, 1493.000000)">
+                <g id="bg-box-right" transform="translate(0.000000, 80.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <path d="M1261.32319,178.481932 C1252.32319,47.3009998 995.299609,-26.982083 931.116015,77.2171357 C866.932422,181.416354 966.323187,220.793662 966.323187,305.335309 C966.323187,361.696407 933.215458,415.071176 867,465.459614 L1171.32319,472.001262 C1237.32319,363.775664 1267.32319,265.935887 1261.32319,178.481932 Z" id="vv" fill-opacity="0.5" fill="#F7EAEA" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
