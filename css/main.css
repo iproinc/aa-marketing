@@ -84,9 +84,10 @@ li p {
 
 /* PROGRAM SECTION */
 .program {
+  font-size: 1.125rem;
   width: 100%;
   max-width: 860px;
-  padding: 0 64px;
+  padding: 0 30px;
   box-shadow: 0 0 10px rgba(78, 105, 162, 0.22);
   background-color: var(--light-bg-color);
 }
@@ -151,6 +152,7 @@ li p {
   color: #2EA94F!important;
   text-decoration: underline;
 }
+
 
 /* FAQ SECTION */
 .faq {
