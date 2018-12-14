@@ -249,6 +249,9 @@ footer .cta-wrapper {
 
 /* SMALL DEVICES (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  nav {
+    height: inherit;
+  }
   .header-img {
     margin-bottom: 25px;
   }
