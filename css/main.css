@@ -310,6 +310,9 @@ footer .cta-wrapper {
     padding-left: 15px;
     color: var(--text-grey);
   }
+  .faq {
+    padding: 3rem 0;
+  }
   .cta {
     padding: 25px;
   }
