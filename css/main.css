@@ -39,7 +39,8 @@ h4 {
 }
 nav {
   box-shadow: 0 2px 18px rgba(0,0,0,0.12);
-  background: rgba(248, 249, 251, 0.733)
+  background: rgba(248, 249, 251, 0.733);
+  height: 7vh;
 }
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--heading)!important;
