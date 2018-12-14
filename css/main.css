@@ -144,6 +144,13 @@ li p {
   text-transform: uppercase;
   background-color: #2EA94F;
 }
+.header-link {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2EA94F!important;
+  text-decoration: underline;
+}
 
 /* FAQ SECTION */
 .faq {
