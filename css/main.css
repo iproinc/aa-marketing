@@ -11,6 +11,7 @@ body {
 }
 .scrolling-box {
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   height: 93vh;
   scroll-behavior: smooth;
 }
