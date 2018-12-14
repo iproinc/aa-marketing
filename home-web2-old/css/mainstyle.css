@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #3E5B85;
+    --light-primary: #B8CBDF;
+    --green: #51C12D;
+
+}
+
+body{
+	font-family: 'Roboto', sans-serif; 
+}
+
+.topbar{
+    padding: 20px 10px;
+}
+
+.topbar img {
+    height: 47px;
+}
+
+.header{
+    background-image: url(../images/bg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-bottom: 90px;
+    background-size: cover;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+
+h2.subtitle{
+    font-size: 24px;
+    color: var(--light-primary);
+}
+
+h3, h4{
+    font-weight: 700;
+    color: #3E5B85; 
+    font-size: 24px;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+.header ul{
+    width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.btn{
+    background: #E26474;
+    font-weight: 700;
+    font-size: 28px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px 120px;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background: #d64d5e;
+    border: none;
+}
+
+.link{
+    font-weight: 700;
+    font-size: 20px;
+    width: 450px;
+    height: 60px;
+    border-radius: 8px;
+    line-height: 60px;
+    background-color: #51C12D;
+}
+
+.link a {
+    color: white!important;
+}
+
+.graphic {
+    width: 80%;
+    display: block;
+}
+
+.countdown{
+    background: #EFF3F6;
+    padding: 20px 10px;
+}
+
+.featured {
+    padding: 30px 10px;
+}
+
+.testimonial, .about{
+    padding: 50px 10px 0;
+}
+
+.testimonial{
+    background-image: url(../images/bg-box-left.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.about{
+    background-image: url(../images/bg-box-right.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+
+.testimonial .card{
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px 0 rgba(59,73,93,0.10);
+    border-radius: 8px;
+}
+
+.testimonial .card img{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.fred{
+    background-image: url(../images/fred.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 370px;
+}
+
+.footer{
+    background-image: linear-gradient(-90deg, #052748 0%, #132C40 47%, #07171D 100%);
+    padding: 30px 10px;
+}
+
+.footer, .footer a{
+    font-size: 14px;
+    color:#FFF; 
+}
+
+.mobile{
+    display: none;
+}
+
+
+/*timer*/
+.tick {
+  font-size:1rem; white-space:nowrap; font-family:arial,sans-serif;
+}
+
+.tick-flip,.tick-text-inline {
+  font-size:2.5em;
+}
+
+.tick-label {
+  margin-top:1em;font-size:1em;
+}
+
+.tick-char {
+  width:1.5em;
+}
+
+.tick-text-inline {
+  display:inline-block;text-align:center;min-width:1em;
+}
+
+.tick-text-inline+.tick-text-inline {
+  margin-left:-.325em;
+}
+
+.tick-group {
+  margin:0 .5em;text-align:center;
+}
+
+.tick-text-inline {
+   color: #595d63 !important; 
+}
+
+.tick-label {
+   color: #595d63 !important; 
+}
+
+.tick-flip-panel {
+   color: #616161 !important; 
+}
+
+.tick-flip-panel-text-wrapper {
+   line-height: 1.45 !important; 
+}
+
+.tick-flip-panel {
+   background-color: #F9F9F9 !important; 
+}
+
+.tick-flip {
+   border-radius:0.12em !important; 
+}
+
+.tick-flip-panel-back:after{
+        background-image: linear-gradient(180deg,rgba(152, 152, 152, 0.5) 1px,rgba(0, 0, 0, 0) 0,transparent 30%);
+}
+
+@media only screen and (max-width: 1199px){
+.dark-bg .container {width: 1300px;}
+}
+
+@media only screen and (max-width:991px) {
+    h1{font-size: 28px;}
+    h2.subtitle{font-size: 20px;}
+    h3{font-size: 18px;}
+    h4{font-size: 22px;}
+    .countdown .pt-3{padding-top: 10px!important;}
+    .dark-bg img{margin-right: 30px;}
+    .fred{height: 450px;}
+}
+
+@media only screen and (max-width:767px) {
+    h2.mb-5{margin-bottom: 20px!important;}
+    .header ul{width: 100%;}
+    .dark-bg img{margin-right: 0;}
+    h3{text-align: center;font-size: 22px;}
+    .countdown .pt-3{padding-bottom: 10px;}
+    .about{padding-top: 20px;}
+    .about h4{text-align: center;}
+    .fred{height: 250px;}
+    .btn{padding: 15px 80px;}
+}
+
+@media only screen and (max-width: 575px){
+    .dark-bg .container {width: 100%;}
+    .testimonial .flex-sm-row{flex-direction: row;}
+    .testimonial .card-body{font-size: 14px;}
+    h1{font-size: 22px;}
+    h2.subtitle{font-size: 18px;}
+    h3, h4{font-size: 18px;}
+    body{font-size: 16px;}
+    .header ul img{width: 30px;}
+    h4.mb-5{margin-bottom: 20px!important;}
+    .btn{font-size: 18px;padding: 10px 30px;}
+}
+
+@media only screen and (max-width: 425px){
+    .mobile, img.mobile{display: block!important;}
+    .topbar.mb-5{margin-bottom: 20px!important;}
+    div.mt-5{margin-top: 20px!important;}
+    div.my-4{margin-bottom: 10px!important;margin-top:10px!important;}
+    .testimonial img{display: none;}
+    .testimonial .card-body{display: block!important;}
+    .testimonial .card-body small{display: flex;}
+    .testimonial .card-body .text-dark{margin-top: 20px;}
+    img.mobile{float: left;}
+    .dark-bg .container {width: 90%;}
+    .logo{width: 100px;}
+    .topbar{padding: 10px;}
+    .header ul{ font-size: 16px;}
+}
