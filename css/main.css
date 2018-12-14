@@ -26,7 +26,7 @@ h2 {
   font-weight: 400;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 700;
   line-height: 33px;
   color: white;
@@ -257,15 +257,19 @@ footer .cta-wrapper {
   nav {
     height: inherit;
   }
+  header {
+    margin-bottom: 25px;
+  }
   .header-img {
     margin-bottom: 25px;
     width: 150px;
   }
   header .points {
-    padding: 15px;
+    padding: 0 15px;
   }
   ul {
     padding: 0;
+    margin-bottom: 0;
   }
   .about-wrap {
     padding: 15px;
