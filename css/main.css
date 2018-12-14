@@ -118,7 +118,7 @@ li p {
 /* CTA SECTION */
 .cta {
   background-color: var(--primary-color);
-  background-image: url(../assets/Bitmap.svg);
+  background-image: url(../image/Bitmap.svg);
   background-blend-mode: multiply;
   padding: 50px;
 }
@@ -149,8 +149,11 @@ li p {
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #2EA94F!important;
+  color: #2EA94F;
   text-decoration: underline;
+}
+.header-link:hover {
+  color: rgb(38, 138, 64);
 }
 
 
