@@ -119,6 +119,9 @@ li p {
   line-height: 1.1875;
   color: var(--primary-color);
 }
+.mobile{
+  display: none;
+}
 
 /* CTA SECTION */
 .cta {
@@ -295,6 +298,17 @@ footer .cta-wrapper {
   }
   .program-text {
     padding-left: 0;
+  }
+  .program-text p:first-child, .program-wrapper .program-img:nth-child(2) {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+  .mobile p {
+    padding-left: 15px;
+    color: var(--text-grey);
   }
   .cta {
     padding: 25px;
