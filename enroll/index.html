@@ -133,7 +133,9 @@
 
     <div class="video mb-5">
       <div class="container w-50 mx-auto">
-        <a href="https://www.youtube.com/watch?v=UzGKTC3-CI0" target="_blank"><img src="images/live.jpg" class="img-fluid"></a>
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="images/live.jpg" data-video="http://www.youtube.com/embed/UzGKTC3-CI0?autoplay=1" class="img-fluid" style="margin-top: -56.25%;">
+        </div>
       </div>
       <!--  container      -->
     </div>
@@ -659,6 +661,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/flip.min.js"></script>
   <script>
+    $('.video img').click(function(){
+        video = '<iframe class="embed-responsive-item" src="'+ $(this).attr('data-video') +'"></iframe>';
+        $(this).replaceWith(video);
+    });
+
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           anchor.addEventListener('click', function (e) {
               e.preventDefault();
