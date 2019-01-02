@@ -8,10 +8,3 @@ echo Start to pull https://github.com/simonmengyu/aa-marketing.git on server ec2
 
 ssh deploy@ec2-18-220-217-60.us-east-2.compute.amazonaws.com 'cd apps/aa-marketing; git pull'
 
-echo Start to pull https://github.com/simonmengyu/aa-marketing.git on server ec2-3-16-175-108.us-east-2.compute.amazonaws.com
-
-ssh deploy@ec2-3-16-175-108.us-east-2.compute.amazonaws.com 'cd apps/aa-marketing; git pull'
-
-echo Start to pull https://github.com/simonmengyu/aa-marketing.git on server ec2-3-17-119-17.us-east-2.compute.amazonaws.com
-
-ssh deploy@ec2-3-17-119-17.us-east-2.compute.amazonaws.com 'cd apps/aa-marketing; git pull'
