@@ -1,0 +1,120 @@
+body{
+	font-family: 'Roboto', sans-serif; 
+}
+
+h1{
+	color:#4E69A2; 
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.optin{
+	background-image: url(../images/bg.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 70%;
+	background-size: 100%;
+}
+
+.box{
+	background: #FFFFFF;
+	box-shadow: 0 0 30px 0 rgba(12,56,93,0.14);
+	border-radius: 10px;
+	padding: 80px;
+	max-width: 960px;
+	position: relative;
+	top: 100px;
+}
+
+.note{
+    font-size: 20px;
+}
+
+.form .btn{
+    background: #E26474;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+    font-weight: 700;
+    border: none;
+    font-size: 1.5rem;
+    padding-top: 12px;
+}
+
+.check img{
+    width: 150px;
+    margin: auto;
+}
+
+.footer, .footer a{
+    font-size: 14px;
+    color:#54698D; 
+}
+
+
+/*timer*/
+.timer{
+	background-color: transparent;
+    font-size: .5rem;
+    color:#9B9B9B;
+}
+
+.timer::before,.timer::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #4E69A2;
+    width: 12%;
+    transform: translateY(-2rem);
+}
+
+.timer .ce-days, .timer .ce-hours,.timer .ce-minutes,.timer .ce-seconds{
+    font-size: 2.5rem;
+    color: #54698D;
+    font-weight: 700;
+}
+
+/*legel pages*/
+.pages_header{
+    background-color: #3a4d63;
+    padding: 20px 0;
+}
+
+.heading-left{
+    margin: 30px 0;
+    color:#4E69A2;
+}
+.content{
+    width: 70%;
+}
+
+@media only screen and (max-width: 1199px) {
+.optin{background-position: 50% 0;}
+}
+
+@media only screen and (max-width:991px) {
+.box{top: 50px;width: 640px;padding:80px 30px;}
+}
+
+@media only screen and (max-width:768px) {
+h1{font-size: 1.5rem;}
+.note{font-size:1rem;}
+.box{width:90%;}
+.timer::before,.timer::after {width: 30px;}
+.timer .ce-col{margin-left: 10px;margin-right: 10px;}
+.check img{width: 100px;}
+.form-group.w-75{width: 80%!important;}
+}
+
+@media only screen and (max-width: 540px){
+.timer{padding: 20px 0;}
+.timer .ce-col {display: inline-block;}
+.timer::before,.timer::after {transform: translateY(-1rem);}
+.timer .ce-days, .timer .ce-hours,.timer .ce-minutes,.timer .ce-seconds{font-size:1.7rem;}
+.box{padding:30px; top: 30px;}
+.note{margin-bottom: 0;}
+.form .btn{width: 100%; height: 50px;padding-top: 6px;}
+.form-group.w-75{width: 100%!important;}
+}
+
+@media only screen and (max-width: 425px){
+.timer::before,.timer::after {display: none;} 
+}
