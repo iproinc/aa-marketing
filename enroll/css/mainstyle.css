@@ -359,7 +359,6 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
         background-image: linear-gradient(180deg,rgba(152, 152, 152, 0.5) 1px,rgba(0, 0, 0, 0) 0,transparent 30%);
 }
 
-
 @media only screen and (max-width: 1493px){
 .bonuses .media-body.mt-3{margin-top: 0!important;}
 }
@@ -391,7 +390,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     .module .container, .bonuses .container{width: 100%;}
     .module ul{width: 100%; font-size: 16px;}
     .spots{font-size: 24px;}
-    .countdown.w-50{width:80%!important;}
+    .countdown.w-50, .video .w-50{width:80%!important;}
 }
 
 @media only screen and (max-width:767px) {
@@ -417,7 +416,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     .bonuses .media img{display:block; margin: auto!important;}
     .dark-bg h4{font-size: 18px; margin-top: 20px!important;}
     .dark-bg h3.mb-5{margin-bottom: 20px!important;}
-    .countdown.w-50{width:100%!important;}
+    .countdown.w-50, .video .w-50{width:100%!important;}
 }
 
 @media only screen and (max-width: 675px){
