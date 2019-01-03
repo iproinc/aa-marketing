@@ -31,6 +31,8 @@ h1{
     font-weight: 700;
     font-size: 34px;
     color: #3E4D61;
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
 
 h2.subtitle{
@@ -89,6 +91,7 @@ h5{
     font-size: 39px;
     color: #006ECC;
     text-align: center;
+    margin-top: 0;
 }
 
 .pricing .card{
@@ -96,15 +99,24 @@ h5{
 }
 
 .price1 .badge{
+    width: 240px;
+    margin: auto;
+    font-size: 18px;
+    position: relative;
+    top: -25px;
+    padding: 15px;
+}
+
+.price1 .card-body{
+    padding-top: 0;
+}
+
+.price3 .badge, .price6 .badge{
     width: 215px;
     margin: auto;
     font-size: 18px;
     position: relative;
     top: -15px;
-}
-
-.price3 .card-body, .price6 .card-body{
-    padding-top: 46px;
 }
 
 #pricing2{
@@ -400,6 +412,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     .countdown.w-50, .video .w-50{width:80%!important;}   
     .pricing.card-deck{display: block;}
     #pricing2 {margin-top: 0;}
+    .price1{margin-top: 35px;}
 }
 
 @media only screen and (max-width:767px) {
@@ -436,7 +449,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
 @media only screen and (max-width: 575px){
     .testimonial .flex-sm-row{flex-direction: row;}
     .testimonial .card-body{font-size: 14px;}
-    h1{font-size: 20px;}
+    h1{font-size: 20px; margin-top: 20px;margin-bottom: 20px;}
     h2.subtitle{font-size: 16px;}
     h3, .dark-bg h4, h5{font-size: 18px;}
     body{font-size: 16px;}
