@@ -99,12 +99,13 @@ h5{
 }
 
 .price1 .badge{
-    width: 240px;
+    width: 280px;
     margin: auto;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
     top: -25px;
     padding: 15px;
+    color: #da1d57;
 }
 
 .price1 .card-body{
@@ -117,6 +118,10 @@ h5{
     font-size: 18px;
     position: relative;
     top: -15px;
+}
+
+.price3 .card-body, .price6 .card-body{
+    padding-top: 25px;
 }
 
 #pricing2{
