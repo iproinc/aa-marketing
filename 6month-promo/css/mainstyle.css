@@ -52,9 +52,8 @@ h4{
 }
 
 h5{
-    color:#fff;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .btn{
@@ -358,7 +357,14 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
         background-image: linear-gradient(180deg,rgba(152, 152, 152, 0.5) 1px,rgba(0, 0, 0, 0) 0,transparent 30%);
 }
 
+.cta .btn{
+    line-height: 1.2;
+}
 
+.cta .btn span{
+    font-size: 20px;
+    color: yellow;
+}
 
 @media only screen and (max-width: 1493px){
 .bonuses .media-body.mt-3{margin-top: 0!important;}
@@ -437,6 +443,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     .header ul img{width: 30px;}
     h4.mb-5{margin-bottom: 20px!important;}
     .btn{font-size: 16px;padding: 10px 20px;}
+    .cta .btn span{font-size: 16px;}
     .featured .container{width: 100%;}
     .faq .btn:before{padding-bottom: 26px;}
     .spots{display: none;}
@@ -460,6 +467,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     div.mt-5{margin-top: 20px!important;}
     div.my-4{margin-bottom: 10px!important;margin-top:10px!important;}  
     .btn{font-size: 14px;padding: 10px;}
+    .cta .btn span{font-size: 14px;}
     .featured .container{width: 90%;}
     h5{font-size: 16px;}
 }
