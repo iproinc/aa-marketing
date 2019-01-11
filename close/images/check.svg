@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="optin-copy" transform="translate(-590.000000, -437.000000)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(590.000000, 437.000000)">
+                <circle id="Oval" fill="#28A745" cx="50" cy="50" r="50"></circle>
+                <path d="M73.1491542,22.4605752 C66.892664,17.196013 58.8167181,14.0243902 50,14.0243902 C30.1312194,14.0243902 14.0243902,30.1312194 14.0243902,50 C14.0243902,69.8687806 30.1312194,85.9756098 50,85.9756098 C69.8687806,85.9756098 85.9756098,69.8687806 85.9756098,50 C85.9756098,44.6891562 84.8248235,39.647093 82.7590075,35.1095668" id="Path" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+                <polyline id="Path-2" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="31.097561 45.2293445 51.3979774 62.195122 95.1219512 20.1219512"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

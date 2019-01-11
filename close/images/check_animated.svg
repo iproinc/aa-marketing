@@ -1,0 +1,15 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="optin-copy" transform="translate(-590.000000, -437.000000)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(590.000000, 437.000000)">
+                <path id="Oval" fill="#28A745" d="M0,50A50,50 0,1,1 100,50A50,50 0,1,1 0,50" class="IkvIwZdj_0"></path>
+                <path d="M73.1491542,22.4605752 C66.892664,17.196013 58.8167181,14.0243902 50,14.0243902 C30.1312194,14.0243902 14.0243902,30.1312194 14.0243902,50 C14.0243902,69.8687806 30.1312194,85.9756098 50,85.9756098 C69.8687806,85.9756098 85.9756098,69.8687806 85.9756098,50 C85.9756098,44.6891562 84.8248235,39.647093 82.7590075,35.1095668" id="Path" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" class="IkvIwZdj_1"></path>
+                <path id="Path-2" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M31.097561,45.2293445L51.3979774,62.195122L95.1219512,20.1219512" class="IkvIwZdj_2"></path>
+            </g>
+        </g>
+    </g>
+<style data-made-with="vivus-instant">.IkvIwZdj_0{stroke-dasharray:315 317;stroke-dashoffset:316;animation:IkvIwZdj_draw 666ms linear 0ms forwards;}.IkvIwZdj_1{stroke-dasharray:211 213;stroke-dashoffset:212;animation:IkvIwZdj_draw 666ms linear 166ms forwards;}.IkvIwZdj_2{stroke-dasharray:88 90;stroke-dashoffset:89;animation:IkvIwZdj_draw 666ms linear 333ms forwards;}@keyframes IkvIwZdj_draw{100%{stroke-dashoffset:0;}}@keyframes IkvIwZdj_fade{0%{stroke-opacity:1;}92.3076923076923%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
