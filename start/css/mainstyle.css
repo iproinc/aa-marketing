@@ -10,8 +10,8 @@ a:hover{
 }
 
 .navbar.fixed-top{
-    padding:20px 150px;
-    background-color: #fdfdfe;
+    padding:40px 150px 10px;
+    background-color: #f5f8fa;
 }
 
 .btn.btn-t{
@@ -360,7 +360,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
 }
 
 .cbtb .trust-badge{
-	background-color: transparent;
+	background-color: #f5f8fa;
 	background-image: none;
 	position: fixed!important;
   z-index: 9999;
@@ -372,7 +372,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
 }
 
 @media only screen and (max-width: 1440px){
-.navbar.fixed-top{padding:20px 80px;}
+.navbar.fixed-top{padding:40px 80px 10px;}
 }
 
 @media only screen and (max-width: 1199px){
@@ -381,7 +381,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
 }
 
 @media only screen and (max-width:991px) {
-    .header{padding:30px 0 10px;}
+    .header{padding:50px 0 10px;}
     h1, .fancy{font-size: 28px;}
     h2.subtitle{font-size:20px;}
     h3{font-size: 22px;}
@@ -403,7 +403,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
 
 @media only screen and (max-width:767px) {
     body{font-size: 16px;}
-    .navbar.fixed-top{padding:10px 20px;}
+    .navbar.fixed-top{padding:40px 20px 10px;}
     .btn.btn-t{font-size: 16px;}
     .logo{width: 100px;}
     h1{font-size: 24px;}
@@ -439,7 +439,7 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     h1{font-size: 20px;}
     h2.subtitle{font-size: 16px;}
     h3, .dark-bg h4, h5{font-size: 18px;}
-    body{font-size: 16px;}
+    body{font-size: 16px;padding-top: 105px;}
     .header ul img{width: 30px;}
     h4.mb-5{margin-bottom: 20px!important;}
     .btn{font-size: 16px;padding: 10px 20px;}
@@ -449,12 +449,10 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     .spots.mobile, .btn-t.mobile{display: block;}
     .btn-t.mobile{margin-left: 80px;}
     .header{padding: 10px;}
-    body{padding-top: 105px;}
 }
 
 @media only screen and (max-width: 480px){
-	#cbBadge{display:block!important;background-color: #fff;}
-	.navbar.fixed-top{padding-top: 40px;}
+	#cbBadge{display:block!important;}
 	body {padding-top: 135px;}
 }
 
