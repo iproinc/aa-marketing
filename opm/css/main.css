@@ -102,7 +102,7 @@ nav{
 
 h1{
   font-weight: bolder;
-  font-size: 38px;
+  font-size: 41px;
   margin-top: 30px;
   margin-bottom: 40px;
 }
@@ -276,6 +276,19 @@ h5{
   display: none;
 }
 
+.w-60{
+  width: 60%;
+}
+
+.form-theme1 .form-control {
+  height: 55px;
+  text-align: center;
+}
+
+.form-theme1 .btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 /* FOOTER SECTION */
 footer {
@@ -340,6 +353,7 @@ p.text-center{line-height: 1.1;}
 .carousel-indicators{bottom:-80px;}
 .cta a:after, .cta a:before{display: none;}
 .mobile{display: block;}
+.w-60{width:80%;}
 }
 
 @media (max-width: 767px) {
@@ -363,7 +377,7 @@ p.text-center{line-height: 1.1;}
 }
 
 @media (max-width: 470px) {
-h1{font-size:22px; margin-bottom: 10px;}
+h1{font-size:25px; margin-bottom: 10px;}
 .logo{width: 80px;}
 .navbar-text{font-size: 11px;}
 h3, h5{font-size: 18px;}
@@ -381,6 +395,11 @@ header{padding-bottom: 30px;}
 .time{margin-top: 10px; font-size: 26px;}
 .light-bg.py-5{padding-top: 20px!important;}
 .cta-link{display: block;}
+.w-60{width:100%;}
+h1.mt-4{margin-top: 0px!important;}
+.p-4.w-60{padding: 0!important;}
+.form-theme1 .btn {font-size: 24px!important;}
+footer{padding:50px 10px;}
 }
 
 @media (max-width: 410px) {
@@ -391,9 +410,11 @@ header{padding-bottom: 30px;}
 @media (max-width: 375px) {
 .navbar-brand{width: 80px;}
 .time{margin-top: 10px; font-size: 28px;}
+.form-theme1 .btn {font-size: 22px!important;}
 }
 
 @media (max-width: 320px) {
   .cta a{font-size: 20px;}
   .top-btn {font-size: 12px;}
+  .form-theme1 .btn {font-size: 18px!important;}
 }
