@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="95px" viewBox="0 0 95 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>storage</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bundle-copy" transform="translate(-204.000000, -2559.000000)" fill-rule="nonzero">
+            <g id="storage" transform="translate(204.000000, 2559.000000)">
+                <polygon id="Path" fill="#30AEE5" points="52.25 38 87.0833333 38 87.0833333 61.75 52.25 61.75"></polygon>
+                <polygon id="Path" fill="#9DDEED" points="52.25 7.91666667 87.0833333 7.91666667 87.0833333 31.6666667 52.25 31.6666667"></polygon>
+                <polygon id="Path" fill="#30AEE5" points="9.5 38 44.3333333 38 44.3333333 61.75 9.5 61.75"></polygon>
+                <polygon id="Path" fill="#1E9BC6" points="9.5 38 26.9166667 38 26.9166667 61.75 9.5 61.75"></polygon>
+                <polygon id="Path" fill="#1E9BC6" points="52.25 38 69.6666667 38 69.6666667 61.75 52.25 61.75"></polygon>
+                <polygon id="Path" fill="#9DDEED" points="9.5 7.91666667 44.3333333 7.91666667 44.3333333 31.6666667 9.5 31.6666667"></polygon>
+                <polygon id="Path" fill="#5BD1DD" points="9.5 7.91666667 26.9166667 7.91666667 26.9166667 31.6666667 9.5 31.6666667"></polygon>
+                <polygon id="Path" fill="#5BD1DD" points="52.25 7.91666667 69.6666667 7.91666667 69.6666667 31.6666667 52.25 31.6666667"></polygon>
+                <polygon id="Path" fill="#E87967" points="22.1666667 7.91666667 31.6666667 7.91666667 31.6666667 17.4166667 22.1666667 17.4166667"></polygon>
+                <polygon id="Path" fill="#4278BA" points="9.5 68.0833333 44.3333333 68.0833333 44.3333333 91.8333333 9.5 91.8333333"></polygon>
+                <polygon id="Path" fill="#4278BA" points="52.25 68.0833333 87.0833333 68.0833333 87.0833333 91.8333333 52.25 91.8333333"></polygon>
+                <polygon id="Path" fill="#2E63AF" points="9.5 68.0833333 26.9166667 68.0833333 26.9166667 91.8333333 9.5 91.8333333"></polygon>
+                <polygon id="Path" fill="#2E63AF" points="52.25 68.0833333 69.6666667 68.0833333 69.6666667 91.8333333 52.25 91.8333333"></polygon>
+                <polygon id="Path" fill="#E87967" points="22.1666667 38 31.6666667 38 31.6666667 47.5 22.1666667 47.5"></polygon>
+                <polygon id="Path" fill="#E87967" points="22.1666667 68.0833333 31.6666667 68.0833333 31.6666667 77.5833333 22.1666667 77.5833333"></polygon>
+                <polygon id="Path" fill="#E87967" points="64.9166667 38 74.4166667 38 74.4166667 47.5 64.9166667 47.5"></polygon>
+                <polygon id="Path" fill="#E87967" points="64.9166667 7.91666667 74.4166667 7.91666667 74.4166667 17.4166667 64.9166667 17.4166667"></polygon>
+                <polygon id="Path" fill="#E87967" points="64.9166667 68.0833333 74.4166667 68.0833333 74.4166667 77.5833333 64.9166667 77.5833333"></polygon>
+                <g id="Group" transform="translate(22.166667, 7.916667)" fill="#E54E35">
+                    <polygon id="Path" points="42.75 60.1666667 47.5 60.1666667 47.5 69.6666667 42.75 69.6666667"></polygon>
+                    <polygon id="Path" points="42.75 30.0833333 47.5 30.0833333 47.5 39.5833333 42.75 39.5833333"></polygon>
+                    <polygon id="Path" points="42.75 3.41060513e-13 47.5 3.41060513e-13 47.5 9.5 42.75 9.5"></polygon>
+                    <polygon id="Path" points="-9.09494702e-13 60.1666667 4.75 60.1666667 4.75 69.6666667 -9.09494702e-13 69.6666667"></polygon>
+                    <polygon id="Path" points="-9.09494702e-13 30.0833333 4.75 30.0833333 4.75 39.5833333 -9.09494702e-13 39.5833333"></polygon>
+                    <polygon id="Path" points="-9.09494702e-13 3.41060513e-13 4.75 3.41060513e-13 4.75 9.5 -9.09494702e-13 9.5"></polygon>
+                </g>
+                <path d="M95,34.8333333 L95,31.6666667 L3.16666667,31.6666667 L3.16666667,1.13686838e-13 L-5.36228981e-08,1.13686838e-13 L-7.59355541e-13,93.4166667 C-0.000109232099,93.8366263 0.166670687,94.2394168 0.463626969,94.536373 C0.76058325,94.8333293 1.16337375,95.0001092 1.58333333,95 L95,95.0000001 L95,91.8333333 L3.16666667,91.8333333 L3.16666667,64.9166667 L95,64.9166667 L95,61.75 L3.16666667,61.75 L3.16666667,34.8333333 L95,34.8333333 Z" id="Path" fill="#3F4E56"></path>
+            </g>
+        </g>
+    </g>
+</svg>

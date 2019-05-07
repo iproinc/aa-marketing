@@ -25,15 +25,27 @@
   height: 2rem;
 }
 
-.video-container {
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.31);
-  border-radius: 4px;
+.info ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.video-container .embed-responsive {
-  width: 640px;
+.info ul {
+  margin: 2em 0;
+}
+
+.info li {
+  margin: 1em;
+}
+
+.info li:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #5CB85C;
 }
 
 .time-container {
