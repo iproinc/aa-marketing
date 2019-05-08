@@ -1,1 +1,4 @@
 .DS_Store
+deploy.php
+run.sh
+server_pull.sh
