@@ -12,24 +12,26 @@ $(document).ready(function () {
 
   if (hop == undefined) {
     // hop cookie is undefiend
-    console.log("undefine hop: " + hop);
-    console.log("hop param: " + existing_hop);
-    console.log("is there '&' param: " + start);
-    console.log("qs: " + queryString);
+    // console.log("undefine hop: " + hop);
+    // console.log("hop param: " + existing_hop);
+    // console.log("is there '&' param: " + start);
+    // console.log("qs: " + queryString);
 
     if (queryString) {
-      console.log("there is queryString");
+      // console.log("there is queryString");
       if (!existing_hop) {
         // if there is queryString and hop does not exist
-        console.log("there is no hop")
+        // console.log("there is no hop")
         window.location = window.location + "&hop=0";
+      } else {
+        hop = existing_hop;
       }
     } else {
       console.log("no queryString");
       if (!existing_hop) {
         if (start < 0) {
           // if there is no queryString && no & and hop param does not exist
-          console.log("no queryString no hop")
+          // console.log("no queryString no hop")
           window.location = window.location + "?hop=0";
         }
       }
@@ -61,6 +63,6 @@ $(document).ready(function () {
     }
   }
 
-  var input = document.getElementById("form_field[35378]");
+  let input = document.getElementById("form_field[35378]");
   input.value = hop;
 });
