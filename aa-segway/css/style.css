@@ -52,21 +52,6 @@ li {
   margin: 0 auto;
 }
 
-.yes-btn {
-  background-color: #5CB85C;
-  border-radius: 7px;
-  border: 0px;
-}
-
-.yes-btn h2 {
-  color: #fff;
-}
-
-.yes-btn span {
-  font-size: 1.3rem;
-  color: #FFEC00;
-}
-
 .no-btn {
   color: #4A90E2;
   font-size: 1.2rem;
@@ -107,7 +92,6 @@ li {
 footer {
   background-image: linear-gradient(0deg, #052748 0%, #3E4D61 100%);
   color: white;
-  padding: 50px;
   font-size: 14px;
 }
 footer h4, footer li p, a {
@@ -181,7 +165,6 @@ footer .cta-wrapper {
   }
   .lessons div {
     margin: 0 auto;
-    width: 75% !important;
     margin-bottom: 1.2rem;
   }
   .yes-btn {
@@ -201,7 +184,7 @@ footer .cta-wrapper {
   .time-container {
     width: 90%;
   }
-  .yes-btn h2 {
+  .yes-btn,h2 {
     font-size: 1.6rem;
   }
   .yes-btn span {
