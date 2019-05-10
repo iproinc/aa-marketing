@@ -6,7 +6,8 @@
             $email = trim($_POST["form_field"][3]);
             if(!preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^", $email)){ 
                 // Failed
-                echo "<center>Invalid email</center>";
+                header("Location: https://adtrics.com/opm/?hop=$hop&pid=1");
+                die();
             } else {
                 // Passed
                 // Post to sendlane with first submit
