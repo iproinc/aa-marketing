@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="437px" height="204px" viewBox="0 0 437 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="43.9423409%" y1="74.1446659%" x2="132.270055%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#ECF1F5" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#D5DEE7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="web-reg1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -1327.000000)" fill="url(#linearGradient-1)" id="Mask-Copy-2">
+            <polygon transform="translate(358.500000, 1443.000000) scale(-1, 1) translate(-358.500000, -1443.000000) " points="-3 1391 720 1327 720 1495 -3 1559"></polygon>
+        </g>
+    </g>
+</svg>
