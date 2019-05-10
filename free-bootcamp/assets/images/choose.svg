@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>choose</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bundle-copy" transform="translate(-206.000000, -2177.000000)" fill-rule="nonzero">
+            <g id="choose" transform="translate(206.000000, 2177.000000)">
+                <path d="M61.0416667,56.0588235 C58.8550833,56.0588235 57.0833333,57.8360588 57.0833333,60.0294118 C57.0833333,57.8360588 55.3115833,56.0588235 53.125,56.0588235 C50.9384167,56.0588235 49.1666667,57.8360588 49.1666667,60.0294118 C49.1666667,57.8360588 47.3949167,56.0588235 45.2083333,56.0588235 C43.02175,56.0588235 41.25,57.8360588 41.25,60.0294118 L41.25,40.9705882 C41.25,38.7772353 39.47825,37 37.2916667,37 C35.1050833,37 33.3333333,38.7772353 33.3333333,40.9705882 L33.3333333,59.2352941 L27,65.5882353 L27,73.5294118 L33.3333333,79.8823529 L33.3333333,91 L65,91 L65,60.0294118 C65,57.8360588 63.22825,56.0588235 61.0416667,56.0588235 Z" id="Path" fill="#F7DFA6"></path>
+                <circle id="Oval" fill="#EF5E65" cx="13.5" cy="13.5" r="13.5"></circle>
+                <polygon id="Path" fill="#36C2CC" points="58 27 43.5 1.13686838e-13 29 27 43.5 27"></polygon>
+                <rect id="Rectangle" fill="#EFD06F" x="64" y="1.13686838e-13" width="27" height="27"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

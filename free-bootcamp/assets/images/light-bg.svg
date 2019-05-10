@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="714px" viewBox="0 0 1440 714" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Rectangle Copy 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-23" y="3009" width="1470" height="714"></rect>
+        <pattern id="pattern-2" width="20.9113721" height="20.9113721" x="-43.9113721" y="2988.08863" patternUnits="userSpaceOnUse">
+            <use xlink:href="#image-3" transform="scale(0.278818295,0.278818295)"></use>
+        </pattern>
+        <image id="image-3" width="75" height="75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAAABGdBTUEAALGN5fIAKQAAAP5JREFUeAHt3LENwyAQBVCgzgyZwwOk9RSeK1O4zQCeIzOktgNSCguBBwgPCcEdFU+I8sd5nu/7vj9DCFOeW0ppWdf1nfdDj5ZLKlDHcTzyvJX1Bzc0VLl8yyXlfnlR51HX57OR9rXDVLC2SqCuq+NhytqhfFFpiTG+8vyUtdTDcFxclMsFjiMCBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAEC/yYQW6mJ0iRDaLlIk+w8f2mSHZhOW5pkB6bVlibZUmn1WmmSX4QEdh1k30JSAAAAAElFTkSuQmCC"></image>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bundle-copy-3" transform="translate(0.000000, -3009.000000)">
+            <g id="Rectangle-Copy-11">
+                <use fill-opacity="0.899885271" fill="#E8EEF3" xlink:href="#path-1"></use>
+                <use fill-opacity="0.08" fill="url(#pattern-2)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
