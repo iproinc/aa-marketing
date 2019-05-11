@@ -11,12 +11,23 @@
             } else {
                 // Passed
                 // Post to sendlane with first submit
-                $url = 'http://fredlam.sendlane.com/api/v1/list-subscriber-add';
+                sendlane($hop, $email, '84');
+                sendlane($hop, $email, '86');
+    
+                // Redirect with hop
+                header("Location: https://adtrics.com/aa-segway/?hop=$hop");
+                die();
+            }
+        }
+    }
+
+    function sendlane($hop, $email, $list_id) {
+        $url = 'http://fredlam.sendlane.com/api/v1/list-subscriber-add';
                 $data = array(
                     'api'           => 'c30d349679d0d58',
                     'hash'          => '238160c46ec30275486d82dfc0653e65',
                     'email'         => $email,
-                    'list_id'       => '84',
+                    'list_id'       => $list_id,
                     'hop'           => $hop
                 );
                 // use key 'http' even if you send the request to https://...
@@ -29,10 +40,4 @@
                 );
                 $context  = stream_context_create($options);
                 file_get_contents($url, false, $context);
-    
-                // Redirect with hop
-                header("Location: https://adtrics.com/aa-segway/?hop=$hop");
-                die();
-            }
-        }
     }
