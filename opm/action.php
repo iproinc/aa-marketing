@@ -12,7 +12,7 @@
             } else {
                 // Passed
                 // Post to sendlane with first submit single optin
-                $single_url = 'http://fredlam.sendlane.com/api/v1/list-subscriber-add';
+                $single_url = 'https://fredlam.sendlane.com/api/v1/list-subscriber-add';
                 $double_url = 'https://fredlam.sendlane.com/form/26440';
                 
                 $single_data = array(
