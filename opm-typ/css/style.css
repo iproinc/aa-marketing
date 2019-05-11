@@ -101,7 +101,7 @@ li {
 footer {
   background-image: linear-gradient(0deg, #052748 0%, #3E4D61 100%);
   color: white;
-  padding: 50px;
+  padding: 50px 0;
   font-size: 14px;
 }
 footer h4, footer li p, a {
@@ -191,6 +191,12 @@ footer .cta-wrapper {
   }
 }
 @media only screen and (max-width: 500px)  {
+  .title {
+    font-size: 1.6rem;
+  }
+  .sub-title {
+    font-size: 1.2rem;
+  }
   .progress {
     display: none;
   }
