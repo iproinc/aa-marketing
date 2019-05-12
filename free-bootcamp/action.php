@@ -8,7 +8,7 @@
             
             if(!preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^", $email)){ 
                 // Failed
-                header("Location: https://adtrics.com/opm/?hop=$hop");
+                header("Location: https://adtrics.com//free-bootcamp/?hop=$hop");
             } else {
                 // Passed
                 // Post to sendlane with first submit single optin
