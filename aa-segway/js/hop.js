@@ -21,9 +21,10 @@ $(document).ready(function () {
       // console.log("there is queryString");
       if (!existing_hop) {
         // if there is queryString and hop does not exist
-        console.log("there is no hop")
-        // window.location = window.location + "&hop=0";
+        // console.log("there is no hop")
+        window.location = window.location + "0";
       } else {
+        // console.log('hop = existing');
         hop = existing_hop;
       }
     } else {
