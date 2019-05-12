@@ -31,10 +31,6 @@ li {
   list-style: none;
 }
 
-.info ul {
-  margin: 2em 0;
-}
-
 .info li {
   margin: 1em 2em;
 }
@@ -179,14 +175,15 @@ footer .cta-wrapper {
 }
 @media only screen and (max-width: 500px)  {
   .title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 10px 0!important;
   }
   .sub-title {
+    font-size: 1.2rem;
     margin: 20px 0!important;
   }
   .congratulations {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .progress {
     display: none;
