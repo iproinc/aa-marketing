@@ -101,10 +101,10 @@ li {
 footer {
   background-image: linear-gradient(0deg, #052748 0%, #3E4D61 100%);
   color: white;
-  padding: 50px;
+  padding: 50px 0;
   font-size: 14px;
 }
-footer h4, footer li p, a {
+footer h4, footer li p, footer a {
   color: white;
   font-size: 14px;
 }
@@ -191,6 +191,21 @@ footer .cta-wrapper {
   }
 }
 @media only screen and (max-width: 500px)  {
+  .title {
+    font-size: 1.2rem;
+  }
+  .sub-title {
+    font-size: 1.2rem;
+  }
+  .card-header p {
+    font-size: 1.3rem;
+  }
+  .img-contain-opm {
+    padding: 15px!important;
+  }
+  .img-contain-opm img {
+    height: 150px;
+  }
   .progress {
     display: none;
   }
@@ -202,5 +217,8 @@ footer .cta-wrapper {
   }
   .yes-btn span {
     font-size: 1.1rem;
+  }
+  footer {
+    padding: 25px 0;
   }
 }

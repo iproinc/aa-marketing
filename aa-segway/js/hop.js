@@ -24,6 +24,7 @@ $(document).ready(function () {
         // console.log("there is no hop")
         window.location = window.location + "0";
       } else {
+        // console.log('hop = existing');
         hop = existing_hop;
       }
     } else {
