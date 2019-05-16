@@ -215,46 +215,66 @@
         </li>
       </ul>      
     </footer>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="https://static.leadpages.net/leadboxes/current/embed.js" async defer></script>
-  <script src="./js/main.js"></script>
-  <script src="../js/jquery-cookie.js"></script>
-  <script src="../js/hop.js"></script>
-  <script>
-    $(document).ready(function () {
-      $hop = getQueryParam("hop");
-      if ($hop) {
-        createCookie('affiliate', $hop, 7);
+    <!-- <img id="affTrack" src="" alt=""> -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://static.leadpages.net/leadboxes/current/embed.js" async defer></script>
+    <script src="./js/main.js"></script>
+    <script src="../js/jquery-cookie.js"></script>
+    <script src="../js/hop.js"></script>
+    <script>
+      $(document).ready(function () {
+        $hop = getQueryParam("hop");
+        if ($hop) {
+          createCookie('affiliate', $hop, 7);
+        }
+      });
+      const get_param_by_name = (name) => {
+        let url = new URL(window.location);
+        return url.searchParams.get(name);
       }
-    });
-    const get_param_by_name = (name) => {
-      let url = new URL(window.location);
-      return url.searchParams.get(name);
-    }
-
-    function createCookie(name, value, days) {
-      var expires = "";
-      if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
+      
+      function createCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
       }
-      document.cookie = name + "=" + value + expires + "; path=/";
-    }
-
-    function getQueryParam(param) {
-      location.search.substr(1)
+      
+      function getQueryParam(param) {
+        location.search.substr(1)
         .split("&")
         .some(function (item) { // returns first occurence and stops
           return item.split("=")[0] == param && (param = item.split("=")[1])
         })
-      // console.log("parma is: " + param);
-      return param
-    }
-  </script>
-    <iframe id="affTrack" src="" width="1px" height="1px" />
+        // console.log("parma is: " + param);
+        return param
+      }
+
+      function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+          var pair = vars[i].split("=");
+          if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+      }
+
+      $(document).ready(function(){
+        var affId = getQueryVariable('hop')
+        var newLink = `http://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+        console.log(affId);
+        console.log(newLink);
+        $('#affTrack').prop('src', newLink);
+      })
+      
+      </script>
+      <iframe id="affTrack" src="http://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8" width="1px" height="1px" />
   </body>
 </html>
