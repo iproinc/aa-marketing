@@ -26,5 +26,8 @@ function getQueryVariable(variable)
 }
 
 var affId = getQueryVariable('hop')
+var newLink = `http://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+console.log(`${affId}`);
+console.log(`${newLink}`);
 
-$('#affTrack').attr('src', `http://${affId}.adtrics.hop.clickbank.net/?pid=8`);
+$('#affTrack').attr('src', newLink);
