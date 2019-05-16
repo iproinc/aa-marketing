@@ -44,7 +44,7 @@ elseif ($_GET['pid'] == "7")
 }
 elseif ($_GET['pid'] == "8")
 {
- header("Location: $url7".preserve_qs());
+ header("Location: $url8".preserve_qs());
 }
 
 
