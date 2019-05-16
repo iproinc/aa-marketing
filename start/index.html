@@ -573,26 +573,40 @@
   <script src="js/flip.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-              e.preventDefault();
-
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  behavior: 'smooth'
-              });
-          });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
-$('.count').each(function() {
-  $(this).prop('Counter', 50).animate({
-    Counter: $(this).text()
-  }, {
-    duration: 3000,
-    easing: 'swing',
-    step: function(now) {
-      $(this).text(Math.ceil(now));
-    }
-  });
-});
+    });
+    $('.count').each(function() {
+      $(this).prop('Counter', 50).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function(now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+    });
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+          var pair = vars[i].split("=");
+          if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+      }
+
+      $(document).ready(function(){
+        var affId = getQueryVariable('hop')
+        var newLink = `http://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+        $('#affTrack').prop('src', newLink);
+      })
     </script>
   <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '4e928867-6ec1-40c8-b102-26dd429558b8', f: true }); done = true; } }; })();</script>
     <iframe id="affTrack" src="http://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8" width="1px" height="1px" />
