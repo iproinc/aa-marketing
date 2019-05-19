@@ -298,6 +298,12 @@ p.small{margin-top: -20px;margin-bottom: 70px;color:#1a7de0;}
     color:#2ca4ff;
 }
 
+.media img   {
+    width: 100%;
+    max-width: 200px;
+}
+
+
 /*timer*/
 .tick {
   font-size:1rem; white-space:nowrap; font-family:arial,sans-serif;

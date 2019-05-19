@@ -186,10 +186,10 @@
                 </div>
               </li>
               <li class="media mt-4">
-                <img class="mr-5 align-self-start" src="images/MIB-Light.svg" alt="bonuses">
+                <img class="mr-5 align-self-start" src="images/agency_training_light.svg" alt="bonuses">
                 <div class="media-body">
-                  <h4 class="mt-0 mb-1">Bonus #3: Exclusive Invitation To M.I.B. (Marketers In Black) <span class="blue">(Value: $1,997 USD)</span></h4>
-                  Get your <strong><u>free ticket to the M.I.B 3-day live event in Vancouver, Canada</u></strong> to meet Fred Lam and other top-performing media buyers from around the world. Not only that, you’ll attend a special live training from Fred for next level knowledge and connections as a Certified Digital Media Buyer!
+                  <h4 class="mt-0 mb-1">Bonus #3: Complete Done-For-You Agency Package <span class="blue">(Value: $1,997 USD)</span></h4>
+                  Once you become a certified High-Performance Media Buyer, you will receive our complete Adtrics Academy Agency Package. This <b><u>done-for-you package</u></b> includes exclusive training videos for your sales team, reporting template, proposal template, and a full agency website and more that you can simply customize to your own needs and start your own advertising agency! 
                 </div>
               </li>
             </ul>
@@ -571,29 +571,44 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/flip.min.js"></script>
+  <script src="js/main.js"></script>
   <script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-              e.preventDefault();
-
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  behavior: 'smooth'
-              });
-          });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
       });
-$('.count').each(function() {
-  $(this).prop('Counter', 50).animate({
-    Counter: $(this).text()
-  }, {
-    duration: 3000,
-    easing: 'swing',
-    step: function(now) {
-      $(this).text(Math.ceil(now));
-    }
-  });
-});
+    });
+    $('.count').each(function() {
+      $(this).prop('Counter', 50).animate({
+        Counter: $(this).text()
+      }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function(now) {
+          $(this).text(Math.ceil(now));
+        }
+      });
+    });
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+          var pair = vars[i].split("=");
+          if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+      }
+
+      $(document).ready(function(){
+        var affId = getQueryVariable('hop')
+        var newLink = `https://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+        $('#affTrack').prop('src', newLink);
+      })
     </script>
   <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '4e928867-6ec1-40c8-b102-26dd429558b8', f: true }); done = true; } }; })();</script>
-    <iframe src=“http://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8” width=“1px” height=“1px” />
+    <iframe id="affTrack" src="https://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8" hidden/>
   </body>
 </html>

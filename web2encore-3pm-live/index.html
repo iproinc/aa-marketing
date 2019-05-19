@@ -20,6 +20,7 @@
   <!-- | STYLESHEETS | Bootstrap CSS, then Main CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+  <link rel="stylesheet" href="css/flip.min.css">
   <link rel="stylesheet" type="text/css" href="./css/progress-style.css">
   <link rel="stylesheet" type="text/css" href="./css/animations.css">
 </head>
@@ -29,11 +30,11 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Loading Screen -->
-  <div class='progress' id="progress_div">
+  <!-- <div class='progress' id="progress_div">
     <div class='bar' id='bar1'></div>
     <div class='percent' id='percent1'></div>
     <img class="loading-image pulsate-fwd" src="./assets/images/adtrics-logo-dark.svg" alt="loading image">
-  </div>
+  </div> -->
 
   <!-- Body -->
   <header class="text-center py-3 bg-white shadow-lg">
@@ -42,7 +43,22 @@
     </a>
   </header>
   <div class="container py-4">
-    <h1 class="text-center font-weight-bold text-warning mb-4">This #1 Skill (That No One Talks About) To Generate $120,000 A Year Or More With Only 4 Sales!</h1>
+    <h1 class="web-title text-center font-weight-bold text-warning mb-2">This #1 Skill (That No One Talks About) To Generate $120,000 A Year Or More With Only 4 Sales!</h1>
+    <div class="countdown-container py-2 mx-auto">
+      <p class="h3 text-white text-center mb-3">Wednesday, May 29th at 3PM EST</p>
+      <div class="countdown">
+        <div class="tick" data-did-init="handleTickInit">
+          <div data-repeat="true" data-layout="horizontal fit" data-transform="preset(d, h, m, s) -> delay">
+            <div class="tick-group">
+              <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                <span data-view="flip"></span>
+              </div>
+              <span data-key="label" data-view="text" class="tick-label h5 text-white"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="embed-responsive embed-responsive-16by9 shadow">
       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/koIo3C2JKJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -85,7 +101,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
+  <script src="js/flip.min.js"></script>
   <script src="./js/progress.js" type="text/javascript"></script>
-  <iframe src=“http://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8” width=“1px” height=“1px” />
+  <script>
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+      }
+      return(false);
+    }
+    
+    $(document).ready(function(){
+      var affId = getQueryVariable('hop')
+      var newLink = `https://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+      $('#affTrack').prop('src', newLink);
+    })
+  </script>
+  <iframe id="affTrack" src="https://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8" hidden/>
 </body>
 </html>
