@@ -65,3 +65,6 @@ function handleTickInit(tick) {
     // document.querySelector('.tick-onended-message').style.display = '';
   };
 }
+
+//using "replace" removes the current page from browser history
+location.replace('https://www.adtrics.com/web1-encore');
