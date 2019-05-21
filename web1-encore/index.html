@@ -318,11 +318,11 @@
 
       $(document).ready(function(){
         var affId = getQueryVariable('hop')
-        var newLink = `https://${affId}.adtrics.hop.clickbank.net/?pid=8`;
+        var newLink = `https://hop.clickbank.net/?vendor=adtrics&affiliate=${affId}&cbpage=1`;
         $('#affTrack').prop('src', newLink);
       })
   </script>
-  <iframe id="affTrack" src="https://{CALL BACK HOP INFO}}.adtrics.hop.clickbank.net/?pid=8" hidden/>
+  <iframe id="affTrack" src="https://hop.clickbank.net/?vendor=adtrics&affiliate={CALL BACK HOP INFO}}&cbpage=1" hidden/>
 </body>
 
 </html>
