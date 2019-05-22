@@ -1,3 +1,7 @@
+$(document).ready(() => {
+  window.location = '/web2-reg'
+})
+
 $(document).ready(function() {
   // Back To Top Button
   $('.container').on('click', '.back-to-top', function (e) {
