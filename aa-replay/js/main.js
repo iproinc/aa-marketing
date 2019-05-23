@@ -15,12 +15,12 @@ const toggleOutVimeo = (id, webinarID) => {
   var iframe = $(id);
   var player = new Vimeo.Player(iframe);
   player.pause();
-  $(webinarID).hide(200);
+  $(webinarID).fadeOut(200);
 }
 
 const toggleInVimeo = (id, webinarID) => {
   var iframe = $(id);
   var player = new Vimeo.Player(iframe);
-  $(webinarID).show(200);
+  $(webinarID).fadeIn(200);
   player.play();
 }
