@@ -21,7 +21,7 @@ body{
     background-image: url(../images/bg.svg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    padding-bottom: 90px;
+    padding-bottom: 155px;
     background-size: cover;
 }
 
@@ -53,16 +53,10 @@ h4{
 }
 
 .btn{
-    background: var(--green);
     font-weight: 700;
     font-size: 28px;
     color: #FFFFFF;
     border-radius: 8px;
-    border: none;
-}
-
-.btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
-    background: var(--green);
     border: none;
 }
 
@@ -73,11 +67,10 @@ h4{
     height: 60px;
     border-radius: 8px;
     line-height: 60px;
-    background-color: #51C12D;
 }
 
-.link a {
-    color: white!important;
+.lesson-section {
+    margin-top: -50px;
 }
 
 .graphic {
@@ -143,63 +136,23 @@ h4{
     display: none;
 }
 
-
-/*timer*/
-.tick {
-  font-size:1rem; white-space:nowrap; font-family:arial,sans-serif;
+/* .cta-link {
+    color: white;
+    animation: pulse 1s infinite;
+    text-decoration: underline;
 }
-
-.tick-flip,.tick-text-inline {
-  font-size:2.5em;
-}
-
-.tick-label {
-  margin-top:1em;font-size:1em;
-}
-
-.tick-char {
-  width:1.5em;
-}
-
-.tick-text-inline {
-  display:inline-block;text-align:center;min-width:1em;
-}
-
-.tick-text-inline+.tick-text-inline {
-  margin-left:-.325em;
-}
-
-.tick-group {
-  margin:0 .5em;text-align:center;
-}
-
-.tick-text-inline {
-   color: #595d63 !important; 
-}
-
-.tick-label {
-   color: #595d63 !important; 
-}
-
-.tick-flip-panel {
-   color: #616161 !important; 
-}
-
-.tick-flip-panel-text-wrapper {
-   line-height: 1.45 !important; 
-}
-
-.tick-flip-panel {
-   background-color: #F9F9F9 !important; 
-}
-
-.tick-flip {
-   border-radius:0.12em !important; 
-}
-
-.tick-flip-panel-back:after{
-        background-image: linear-gradient(180deg,rgba(152, 152, 152, 0.5) 1px,rgba(0, 0, 0, 0) 0,transparent 30%);
-}
+  
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  50% {
+    color: rgb(220, 226, 233);
+  }
+  100% {
+    color: white;
+  }
+} */
 
 @media only screen and (max-width: 1199px){
 .dark-bg .container {width: 1300px;}
