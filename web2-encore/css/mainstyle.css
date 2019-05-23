@@ -63,7 +63,8 @@ h4{
 .link{
     font-weight: 700;
     font-size: 20px;
-    width: 450px;
+    max-width: 450px;
+    width: 90%;
     height: 60px;
     border-radius: 8px;
     line-height: 60px;
