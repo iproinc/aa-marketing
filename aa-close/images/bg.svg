@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="419px" viewBox="0 0 1440 419" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 14</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50.7058377%" y2="142.691886%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EFF2F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="offer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="offer-copy-3" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <polygon id="Path-14" points="0 347 720 419 1440 347 1440 -62 -4.99600361e-15 -62"></polygon>
+        </g>
+    </g>
+</svg>
