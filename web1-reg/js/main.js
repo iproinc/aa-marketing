@@ -7,9 +7,9 @@ jQuery(document).ready(function($) {
       choice = this.value;
 
       if (choice === '3pm') {
-          form.attr('action', 'https://fredlam.sendlane.com/form/26412');
+          form.attr('action', 'https://fredlam.sendlane.com/form/26414');
       } else {
-          form.attr('action', 'https://fredlam.sendlane.com/form/26413');
+          form.attr('action', 'https://fredlam.sendlane.com/form/26415');
       }
   });
 });
