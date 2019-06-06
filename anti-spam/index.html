@@ -81,3 +81,24 @@
     
 </body>
 </html>
+
+<script>
+  $( document ).ready(function() {
+    console.log(231);
+        $.ajax({
+          url:"https://app.iproacademy.com/create_credential",
+          method:"POST",
+          crossDomain: true,
+          data:{
+            email:"test@1.com",
+            api_key: "4XDHjXzSeyNJtFkC",
+            product_code: "Print Profits Bootcamp"
+          },
+          success:function(data)
+          {
+            console.log("success");
+            console.log(data);
+          }
+        });
+  });
+  </script>
