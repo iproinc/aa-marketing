@@ -3,3 +3,4 @@ deploy.php
 run.sh
 server_pull.sh
 .vscode
+node_modules
