@@ -43,7 +43,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div class="header text-center">
-    
+
     <div class="container">
       <nav class="navbar fixed-top navbar-light justify-content-between">
         <a href="http://adtrics.com/"><img src="images/logo.svg" alt="adtrics logo" class="logo mb-3"></a>
@@ -589,6 +589,16 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/flip.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript">
+    if ((window.location.host == "www.adtrics.com" || window.location.host == "adtrics.com" ||  window.location.host != "staging.adtrics.com" || window.location.host != "0.0.0.0:3000") && window.location.pathname == "/join") {
+      window.location.href = "https://wn330.infusionsoft.com/app/orderForms/05439598-6ad5-48e0-9a1f-b0445809a08b"
+    }
+    else {
+      if ((window.location.host != "app.adtrics.com" && window.location.host != "staging.adtrics.com" && window.location.host != "0.0.0.0:3000") && window.location.pathname == "/") {
+        window.location.href = "https://app.adtrics.com"
+      }
+    }
+</script>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
