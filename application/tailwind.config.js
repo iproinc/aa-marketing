@@ -3,7 +3,12 @@ module.exports = {
   mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1920px',
+        '4xl': '2560px',
+      },
+    },
   },
   variants: {
     extend: {},

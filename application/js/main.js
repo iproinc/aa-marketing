@@ -16,12 +16,12 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
   
     if (scroll >= 900) {
-        $(".sidebar").addClass("fixed top-10 right-0 lg:mr-[5%] xl:mr-[11%] 2xl:mr-[18%] 3xl:mr-[22%] 4xl:mr-[28%] w-[300px] hidden lg:block");
+        $(".sidebar").addClass("fixed top-10 right-0 lg:mr-[5%] xl:mr-[11%] 2xl:mr-[18%] 3xl:mr-[22%] 4xl:mr-[28%] w-[300px] hidden lg:block z-10");
         $(".left").addClass("lg:w-2/3");
         $(".sidebar-title").removeClass("hidden");
         $(".sidebar-button").removeClass("hidden");
     } else {
-        $(".sidebar").removeClass("fixed top-10 right-0 lg:mr-[5%] xl:mr-[11%] 2xl:mr-[18%] 3xl:mr-[22%] 4xl:mr-[28%] w-[300px] hidden lg:block");
+        $(".sidebar").removeClass("fixed top-10 right-0 lg:mr-[5%] xl:mr-[11%] 2xl:mr-[18%] 3xl:mr-[22%] 4xl:mr-[28%] w-[300px] hidden lg:block z-10");
         $(".left").removeClass("lg:w-2/3");
         $(".sidebar-title").addClass("hidden");
         $(".sidebar-button").addClass("hidden");
