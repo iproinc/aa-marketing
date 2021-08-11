@@ -1243,6 +1243,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
@@ -1257,6 +1261,10 @@ video {
 
   .md\:gap-4 {
     gap: 1rem;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
   }
 
   .md\:text-3xl {
