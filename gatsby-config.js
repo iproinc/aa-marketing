@@ -38,7 +38,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-fontawesome-css`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
@@ -47,6 +46,7 @@ module.exports = {
         includeInDevelopment: false,
         defaultDataLayer: { platform: "gatsby" },
       },
-    }
+    },
+    `gatsby-plugin-postcss`,
   ],
 }
