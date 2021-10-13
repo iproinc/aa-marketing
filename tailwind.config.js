@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -30,6 +31,10 @@ module.exports = {
         }
       }
     },
+    fontFamily: {
+      'sans': ['Inter', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+     }
   },
   variants: {
     extend: {},
