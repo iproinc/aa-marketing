@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex flex-col gap-6 md:gap-8 justify-center items-center">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-6 w-full">
           <div className="">
-            <StaticImage src="../images/adtrics-logo-primary.svg" height={40}/>
+            <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={data.site.siteMetadata?.title} />
           </div>
           <div className="flex flex-col md:flex-row gap-6 text-sm">
             <div className="flex flex-col leading-8">
