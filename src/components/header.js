@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
   const [menuToggle, setMenuToggle] = useState(false);
 
   return (
-    <header>
+    <header className="fixed w-full top-0 z-50">
       <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-8 px-4">
         <Link to="/" >
           <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={siteTitle}/>
