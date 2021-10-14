@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from 'gatsby-plugin-image'
@@ -6,9 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = ({ siteTitle }) => {
   const [menuToggle, setMenuToggle] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+
+  const onScroll = (e) => {
+    setScrollTop(e.target.documentElement.scrollTop)
+    setScrolling(e.target.documentElement.scrollTop > scrollTop)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', onScroll);
+  },[])
 
   return (
-    <header className="fixed w-full top-0 z-50">
+    <header className={`fixed w-full top-0 z-50 ${scrollTop > 90 ? "bg-mariner-50 backdrop-filter backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90`}>
       <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-8 px-4">
         <Link to="/" >
           <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={siteTitle}/>
