@@ -1,5 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -119,7 +118,11 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <Cta />
+    <Cta 
+      heading="Your Personal Ad Analyst At Your Service"
+      button="Start Your Free Trial"
+      finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
+    />
   </Layout>
 )
 
