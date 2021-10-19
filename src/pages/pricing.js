@@ -73,7 +73,7 @@ const PricingPage = () => (
       </div>
 
       <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] md:py-16 lg:py-28 text-white overflow-hidden">
-        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6 z-50">
+        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6 z-30">
           <div className="col-span-7">
             {features.map((feature, i) => {
               let newText = feature.body.split('\n')
