@@ -12,47 +12,74 @@ const PricingPage = () => (
   <Layout>
     <Seo title="Pricing" />
     <section>
-      <div className="sticky top-36 mt-[-700px] max-w-6xl w-full mx-auto grid grid-cols-12 gap-6 z-40 pb-12">
-        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-12 w-full max-w-[457px]">
+      <div className="hidden sticky top-28 lg:top-36 mt-[-500px] lg:mt-[-700px] max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 z-40 pb-12 px-6">
+        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-4 lg:p-12 w-full max-w-[457px]">
           <div>
             <p className="mb-6 font-bold">Billed Yearly</p>
-            <p className="mb-2 font-bold text-6xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
+            <p className="mb-2 font-bold text-5xl lg:text-6xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
             <p className="mb-3 font-medium text-xs px-2 py-[2px] bg-yellow-400 rounded inline-block">(~$83 USD Per Month)</p>
-            <p>Just one fancy dinner per month</p>
+            <p className="text-sm lg:text-base">Just one fancy dinner per month</p>
           </div>
-          <div className="my-6 border-b border-gray-200"></div>
+          <div className="my-4 lg:my-6 border-b border-gray-200"></div>
           <div>
             <ul className="fa-ul ml-6 font-medium">
-              <li className="mb-6"><span className="fa-li"><FontAwesomeIcon icon={["fas", "infinity"]} className="text-mariner-200 text-sm"/></span>Unlimited Campaign Analysis</li>
-              <li className="mb-6"><span className="fa-li"><FontAwesomeIcon icon={["fas", "ad"]} className="text-mariner-200 text-sm"/></span>No Maximum Ad Spend</li>
-              <li className="mb-6"><span className="fa-li"><FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-mariner-200 text-sm"/></span>Facebook Integration</li>
-              <li className="mb-6"><span className="fa-li"><FontAwesomeIcon icon={["fas", "bullhorn"]} className="text-mariner-200 text-sm"/></span>1 Facebook Ad Account</li>
+              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "infinity"]} className="text-mariner-200 text-sm"/></span>Unlimited Campaign Analysis</li>
+              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "ad"]} className="text-mariner-200 text-sm"/></span>No Maximum Ad Spend</li>
+              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-mariner-200 text-sm"/></span>Facebook Integration</li>
+              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "bullhorn"]} className="text-mariner-200 text-sm"/></span>1 Facebook Ad Account</li>
             </ul>
           </div>
-          <div className="my-6 border-b border-gray-200"></div>
+          <div className="md:my-4 lg:my-6 border-b border-gray-200"></div>
           <div>
-            <a className="rounded-lg bg-[#0083FC] font-semibold text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="https://app.adtrics.com/user/sign_up">Start My Free Trial Now</a>
-            <p className="text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
+            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="https://app.adtrics.com/user/sign_up">Start My Free Trial Now</a>
+            <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
           </div>
         </div>
       </div>
-      <div className="relative h-full min-h-[720px] bg-cover bg-bottom flex items-center" style={{ backgroundImage: `url(${BGimage})` }}>
-        <div className="max-w-6xl w-full mx-auto grid grid-cols-12 gap-6">
-          <div className="col-span-7 gap-7 flex flex-col items-start">
-            <h1 className="text-6xl font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
+
+      <div className="relative h-full mt-20 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-6" style={{ backgroundImage: `url(${BGimage})` }}>
+        <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6">
+          <div className="col-span-7 gap-y-4 md:gap-7 flex flex-col items-start">
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
             <div className="border-b-4 border-mariner-200 w-[120px] "></div>
             <p className="text-xl font-medium">One Simple Pricing. Not Limited Be Ad Spend.</p>
           </div>
         </div>
       </div>
-      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] py-28 text-white overflow-hidden">
-        <div className="max-w-6xl w-full mx-auto grid grid-cols-12 gap-6">
+
+      <div className="md:hidden w-full mx-auto p-2 pb-4">
+        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-4 w-full max-w-[457px]">
+          <div>
+            <p className="mb-6 font-bold">Billed Yearly</p>
+            <p className="mb-2 font-bold text-5xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
+            <p className="mb-3 font-medium text-xs px-2 py-[2px] bg-yellow-400 rounded inline-block">(~$83 USD Per Month)</p>
+            <p className="text-base">Just one fancy dinner per month</p>
+          </div>
+          <div className="my-4 border-b border-gray-200"></div>
+          <div>
+            <ul className="fa-ul ml-6 font-medium">
+              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "infinity"]} className="text-mariner-200 text-sm"/></span>Unlimited Campaign Analysis</li>
+              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "ad"]} className="text-mariner-200 text-sm"/></span>No Maximum Ad Spend</li>
+              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-mariner-200 text-sm"/></span>Facebook Integration</li>
+              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "bullhorn"]} className="text-mariner-200 text-sm"/></span>1 Facebook Ad Account</li>
+            </ul>
+          </div>
+          <div className="my-4 border-b border-gray-200"></div>
+          <div>
+            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="https://app.adtrics.com/user/sign_up">Start My Free Trial Now</a>
+            <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] md:py-16 lg:py-28 text-white overflow-hidden">
+        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6 z-50">
           <div className="col-span-7">
             {features.map((feature, i) => {
               let newText = feature.body.split('\n')
               return (
                 <div key={i} className="mb-16">
-                  <div className="mb-6"><span className="font-medium text-xl mb-6 mr-2">{feature.title}</span>{feature.available === true ? <FontAwesomeIcon icon={["fas", "check"]} className="text-green-500 text-sm align-middle"/> : <span className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Coming Soon!</span> }</div>
+                  <div className="mb-4 lg:mb-6"><span className="font-medium text-xl mb-6 mr-2">{feature.title}</span>{feature.available === true ? <FontAwesomeIcon icon={["fas", "check"]} className="text-green-500 text-sm align-middle"/> : <span className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Coming Soon!</span> }</div>
                   {newText.map((text, i) => (
                     <p key={i} className="mb-6">{text}</p>
                   ))}
@@ -61,19 +88,19 @@ const PricingPage = () => (
             })}
           </div>
         </div>
-        <StaticImage className="absolute right-11 bottom-6 transform rotate-[-8deg]" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
-        <StaticImage className="absolute right-11 -top-6 transform rotate-[8deg]" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
+        <StaticImage className="absolute right-11 -bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
+        <StaticImage className="absolute right-11 -top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
       </div>
     </section>
 
 
-    <section className="bg-white py-24">
-      <div className="max-w-6xl w-full mx-auto">
+    <section className="bg-white py-16 lg:py-24">
+      <div className="max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
-        <div className="flex flex-col flex-wrap gap-6 h-[530px] justify-between">
+        <div className="flex flex-col flex-wrap gap-6 lg:h-[530px] justify-between">
           {faqs.map((faq, i) => {
             return (
-              <div className="bg-gray-50 rounded-lg p-6 w-1/2">
+              <div className="bg-gray-50 rounded-lg p-6 w-full lg:w-1/2">
                 <p className="text-san-marino-500 font-medium mb-4">{faq.question}</p>
                 <p>{faq.answer}</p>
               </div>
