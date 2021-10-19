@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
       {menuToggle === true ?
-        <div className="absolute h-screen w-full z-50 bg-white bg-opacity-95 backdrop-blur-sm p-6 shadow flex flex-col gap-6">
+        <div className="absolute h-screen w-full z-50 bg-white backdrop-blur-sm p-6 shadow flex flex-col gap-6">
           <Link className="px-4" to="/about">About</Link>
           <Link className="px-4" to="/pricing">Pricing</Link>
           <a className="px-4 py-2 rounded bg-gray-100" href="https://app.adtrics.com/user/sign_in">Sign In</a>
