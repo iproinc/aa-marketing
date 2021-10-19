@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
   }, [width])
 
   return (
-    <header className={`sticky w-full top-0 z-50 ${scrollTop > menuBGTrigger || scrollTop > 90 ? "bg-mariner-50 backdrop-filter backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90`}>
+    <header className={`sticky w-full top-0 z-50 ${scrollTop > menuBGTrigger || scrollTop > 90 ? "bg-mariner-50 backdrop-filter backdrop-blur-lg border-gray-100" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90 border-b border-gray-transparent`}>
       <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-4 lg:py-8 px-4">
         <Link to="/" >
           <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={siteTitle}/>

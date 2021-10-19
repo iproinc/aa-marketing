@@ -16,14 +16,13 @@ import analyzeIcon from '../images/home/graphic-analyze.png'
 import dataIcon from '../images/home/graphic-data.png'
 
 const IndexPage = () => {
-
   return (
     <Layout>
       <Seo title="Home" />
       <section className="pt-32 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
-            <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
             <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your ROI-Optimizing Decisions</p>
             <div>
               <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="https://app.adtrics.com/user/sign_up">Start Your Free Trial Now</a>
@@ -46,14 +45,14 @@ const IndexPage = () => {
           </div>
           <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 px-4">
             <p className="font-medium text-mariner-500 text-sm tracking-wide">SUITABLE BUSINESSES INCLUDE</p>
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-7">
+            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7">
               {suitableBusinesses.map((business, i) => (
                 <div key={i} className="rounded border border-mariner-100 p-2 lg:p-6 pt-8 leading-loose relative">
                   <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
                   <p className="font-bold mb-2">{business.title}</p>
                   <ul className="fa-ul ml-6 text-sm lg:text-base leading-loose">
                     {business.businesses.map((niche, i) => (
-                      <li key={i}><span className="fa-li"><FontAwesomeIcon icon={["fas", "dot-circle"]} className="text-mariner-500 text-sm"/></span>{niche}</li>
+                      <li key={i}><span className="fa-li"><FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} className="text-mariner-500 text-sm"/></span>{niche}</li>
                     ))}
                   </ul>
                   <p className="text-sm lg:text-base leading-loose">And more...</p>
@@ -68,7 +67,7 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto flex flex-col gap-y-12 lg:gap-y-36">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6">
-              <p className="font-medium text-xl lg:text-2xl">Facebook A.I. Analyzer</p>
+              <p className="font-bold text-xl lg:text-2xl">Facebook A.I. Analyzer</p>
               <p className="text-gray-700">Take the guesswork out of analyzing your Facebook campaigns and feel confident knowing exactly what to do next to optimize your ad spend!</p>
               <p className="text-gray-700">Adtrics will do all the grunt work and provide you with actionable insights to help you achieve your business goals.</p>
             </div>
@@ -78,7 +77,7 @@ const IndexPage = () => {
           </div>
           <div className="flex flex-col md:flex-row-reverse justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6 lg:pl-36">
-              <p className="font-medium text-xl lg:text-2xl">Facebook Integration</p>
+              <p className="font-bold text-xl lg:text-2xl">Facebook Integration</p>
               <p className="text-gray-700">Simply connect your Facebook ad account and instantly your campaign data will be available for Adtrics to start analyzing! </p>
               <p className="text-gray-700">No more generating reports, customizing columns, and pulling your hair to figure out what to do with your data! </p>
             </div>
@@ -88,7 +87,7 @@ const IndexPage = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6">
-              <p className="font-medium text-xl lg:text-2xl">Unlimited Campaign Analysis </p>
+              <p className="font-bold text-xl lg:text-2xl">Unlimited Campaign Analysis </p>
               <p className="text-gray-700">Run as many campaign analysis as you want with no extra change regardless of how much you spend on ads. </p>
               <p className="text-gray-700">Our focus is simple: to get you results! </p>
             </div>
