@@ -1,6 +1,11 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import SwiperCore, {
+  Pagination, Navigation, EffectCards
+} from 'swiper';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -15,7 +20,9 @@ import settingsIcon from '../images/home/graphic-settings.png'
 import analyzeIcon from '../images/home/graphic-analyze.png'
 import dataIcon from '../images/home/graphic-data.png'
 
+
 const IndexPage = () => {
+  SwiperCore.use([Pagination, Navigation, EffectCards]);
   return (
     <Layout>
       <Seo title="Home" />
@@ -36,6 +43,48 @@ const IndexPage = () => {
       </section>
 
       <section className="bg-white py-16">
+        <div className="max-w-6xl mx-auto overflow-hidden">
+          <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
+            <p className="font-medium text-lg lg:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-indigo-500">Introducing Adtrics</p>
+            <div className="border-b-4 border-mariner-100 w-24"></div>
+            <p className="font-bold text-2xl lg:text-4xl mb-2">Your Personal Ad Analyst Without The 5-Figure Salary</p>
+            <p>Whether you’re a solopreneur, SMB, or even a full-fledged enterprise selling goods online, Adtrics can analyze your Facebook campaign in seconds to save you time and money.</p>
+          </div>
+          <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 px-4">
+            <p className="font-medium text-mariner-500 text-sm tracking-wide">SUITABLE BUSINESSES INCLUDE</p>
+            {/* <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7"> */}
+            <Swiper
+              className="w-full"
+              slidesPerView={"auto"} 
+              centeredSlides={true}
+              spaceBetween={30}
+              pagination={{
+                "clickable": true
+              }}
+              effect={'cards'}
+              freeMode={true}
+            >
+              {suitableBusinesses.map((business, i) => (
+                <SwiperSlide className="relative w-1/2">
+                  <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
+                  <div key={i} className="rounded border border-mariner-100 bg-white p-2 lg:p-6 pt-8 leading-loose">
+                    <p className="font-bold mb-2">{business.title}</p>
+                    <ul className="fa-ul ml-6 text-sm lg:text-base leading-loose">
+                      {business.businesses.map((niche, i) => (
+                        <li key={i}><span className="fa-li"><FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} className="text-mariner-500 text-sm"/></span>{niche}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm lg:text-base leading-loose">And more...</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+              </Swiper>
+            {/* </div> */}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
             <p className="font-medium text-lg lg:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-indigo-500">Introducing Adtrics</p>
@@ -45,9 +94,10 @@ const IndexPage = () => {
           </div>
           <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 px-4">
             <p className="font-medium text-mariner-500 text-sm tracking-wide">SUITABLE BUSINESSES INCLUDE</p>
-            <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7">
+            {/* <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7"> */}
+            <div className="carousel-cell w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7" dataFlickity='{ "wrapAround": true }'>
               {suitableBusinesses.map((business, i) => (
-                <div key={i} className="rounded border border-mariner-100 p-2 lg:p-6 pt-8 leading-loose relative">
+                <div key={i} className="carousel-cell rounded border border-mariner-100 p-2 lg:p-6 pt-8 leading-loose relative">
                   <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
                   <p className="font-bold mb-2">{business.title}</p>
                   <ul className="fa-ul ml-6 text-sm lg:text-base leading-loose">
