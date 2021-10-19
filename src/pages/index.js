@@ -20,7 +20,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <section className="pt-32 lg:pt-40 h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
+      <section className="pt-32 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>

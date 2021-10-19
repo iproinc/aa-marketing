@@ -9,7 +9,7 @@ function AboutPage() {
   return (
     <Layout>
       <Seo title="About" />
-      <section className="bg-white pt-24 pb-12 md:pt-32 lg:py-48 px-6 overflow-hidden">
+      <section className="bg-white py-12 md:py-32 lg:py-48 px-6 overflow-hidden">
         <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6">
           <div className="col-span-7 flex flex-col gap-6">
             <p className="text-3xl lg:text-4xl font-medium">The birth of Adtrics was sparked from a simple question, </p>

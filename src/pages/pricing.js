@@ -37,10 +37,10 @@ const PricingPage = () => (
         </div>
       </div>
 
-      <div className="relative h-full mt-20 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-6" style={{ backgroundImage: `url(${BGimage})` }}>
+      <div className="relative h-full lg:mt-[-104px]  lg:pt-20 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6">
           <div className="col-span-7 gap-y-4 md:gap-7 flex flex-col items-start">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
+            <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold leading-snug drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
             <div className="border-b-4 border-mariner-200 w-[120px] "></div>
             <p className="text-xl font-medium">One Simple Pricing. Not Limited Be Ad Spend.</p>
           </div>
@@ -95,7 +95,7 @@ const PricingPage = () => (
 
 
     <section className="bg-white py-16 lg:py-24">
-      <div className="max-w-6xl w-full mx-auto px-2">
+      <div className="md:max-w-xl lg:max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
         <div className="flex flex-col flex-wrap gap-6 lg:h-[530px] justify-between">
           {faqs.map((faq, i) => {
