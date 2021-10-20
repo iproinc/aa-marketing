@@ -12,7 +12,7 @@ function AboutPage() {
       <section className="bg-white py-12 md:py-32 lg:py-24 px-6 overflow-hidden">
         <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6">
           <div className="col-span-7 flex flex-col gap-6">
-            <p className="text-3xl lg:text-4xl font-medium">The Birth Of Adtrics was sparked from a simple question</p>
+            <p className="text-3xl lg:text-4xl font-medium">The Birth Of Adtrics was sparked from a simple question...</p>
             <p className="text-san-marino-500 italic font-bold">“What would people who are advertising on Facebook need help with, to be more effective on the platform?”</p>
             <p>The answer? A way to analyze their Facebook data.</p>
             <p>If you’re currently advertising on Facebook, you can probably agree that putting an ad up on Facebook is pretty straightforward. You can easily find courses and even free YouTube videos to walk you through step-by-step. The real challenge comes after when the ads are up, and you’re cluelessly looking at the data, trying to decipher what those numbers on the table mean and what you should do next. </p>
@@ -23,7 +23,7 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="mb-12 lg:mb-24">
+      <section className="bg-white mb-12 lg:mb-24">
         <div className="max-w-6xl w-full mx-auto grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-12 gap-6 px-4">
           <div className="relative col-span-6 p-8 lg:p-12 rounded-2xl overflow-hidden ring-4 ring-white ring-inset ring-opacity-50 bg-gradient-to-br from-[#fff7c980] to-[#ffc58780]">
             <p className="font-bold text-4xl lg:text-5xl leading-tight mb-6">The Story Lies In The Data </p>

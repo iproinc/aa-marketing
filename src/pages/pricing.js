@@ -36,7 +36,6 @@ const PricingPage = () => (
           </div>
         </div>
       </div>
-
       <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6">
           <div className="col-span-7 gap-y-4 md:gap-7 flex flex-col items-start">
@@ -46,7 +45,6 @@ const PricingPage = () => (
           </div>
         </div>
       </div>
-
       <div className="md:hidden w-full mx-auto p-2 pb-4">
         <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-4 w-full max-w-[457px]">
           <div>
@@ -71,7 +69,6 @@ const PricingPage = () => (
           </div>
         </div>
       </div>
-
       <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] md:py-16 lg:py-28 text-white overflow-hidden">
         <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6 z-30">
           <div className="col-span-7">
@@ -92,8 +89,6 @@ const PricingPage = () => (
         <StaticImage className="!absolute right-11 -top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
       </div>
     </section>
-
-
     <section className="bg-white py-16 lg:py-24">
       <div className="md:max-w-xl lg:max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
@@ -109,13 +104,11 @@ const PricingPage = () => (
         </div>
       </div>
     </section>
-
     <Cta 
       heading="Let Us Analyze Your Ads For You "
       button="Start Your Free Trial"
       finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
     />
-
   </Layout>
 )
 

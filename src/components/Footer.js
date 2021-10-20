@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo from '../images/adtrics-logo-primary.svg'
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -14,12 +15,12 @@ const Footer = () => {
     }
   `)
   return (
-    <footer className="bg-white flex flex-col justify-center items-center p-4 py-16 lg:py-8 min-h-[400px]">
+    <footer className="bg-white flex flex-col justify-center items-center p-4 py-16 lg:py-8 min-h-[400px] text-san-marino-900">
       <div className="w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl flex flex-col gap-6 md:gap-8 justify-center items-center">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-6 w-full">
-          <div className="">
-            <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={data.site.siteMetadata?.title} placeholder="none" />
-          </div>
+          <Link to="/">
+            <img src={logo} className="h-[40px]" alt={data.site.siteMetadata?.title} />
+          </Link>
           <div className="flex flex-col md:flex-row gap-6 text-sm">
             <div className="flex flex-col leading-8">
               <p className="font-bold text-base mb-2">Company</p>
