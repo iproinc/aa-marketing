@@ -88,8 +88,8 @@ const PricingPage = () => (
             })}
           </div>
         </div>
-        <StaticImage className="absolute right-11 -bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
-        <StaticImage className="absolute right-11 -top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
+        <StaticImage className="!absolute right-11 -bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
+        <StaticImage className="!absolute right-11 -top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} />
       </div>
     </section>
 
@@ -97,7 +97,7 @@ const PricingPage = () => (
     <section className="bg-white py-16 lg:py-24">
       <div className="md:max-w-xl lg:max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
-        <div className="flex flex-col flex-wrap gap-6 lg:h-[530px] justify-between">
+        <div className="flex flex-col flex-wrap gap-6 lg:h-[540px] justify-between">
           {faqs.map((faq, i) => {
             return (
               <div className="bg-gray-50 rounded-lg p-6 w-full lg:w-1/2">
