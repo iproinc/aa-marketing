@@ -2,9 +2,13 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css/effect-cards"
+import "swiper/css/effect-coverflow"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 
 import SwiperCore, {
-  Pagination, Navigation, EffectCards
+  Pagination, Navigation, EffectCards, EffectCoverflow
 } from 'swiper';
 
 import Layout from "../components/layout"
@@ -22,11 +26,11 @@ import dataIcon from '../images/home/graphic-data.png'
 
 
 const IndexPage = () => {
-  SwiperCore.use([Pagination, Navigation, EffectCards]);
+  SwiperCore.use([Pagination, Navigation, EffectCards, EffectCoverflow]);
   return (
     <Layout>
       <Seo title="Home" />
-      <section className="pt-32 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
+      <section className="pt-32 pb-16 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
@@ -42,6 +46,52 @@ const IndexPage = () => {
         </div>
       </section>
 
+      <section className="bg-white pb-0 lg:py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
+            <p className="font-medium text-lg lg:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-indigo-500">Introducing Adtrics</p>
+            <div className="border-b-4 border-mariner-100 w-24"></div>
+            <p className="font-bold text-2xl lg:text-4xl mb-2">Your Personal Ad Analyst Without The 5-Figure Salary</p>
+            <p>Whether you’re a solopreneur, SMB, or even a full-fledged enterprise selling goods online, Adtrics can analyze your Facebook campaign in seconds to save you time and money.</p>
+          </div>
+          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-12 px-4 py-6 overflow-hidden">
+            <p className="font-medium text-mariner-500 text-sm tracking-wide">SUITABLE BUSINESSES INCLUDE</p>
+            {/* <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7"> */}
+            <Swiper
+              className="!overflow-visible grid grid-cols-1 gap-4 !pb-14"
+              slidesPerView={"auto"} 
+              spaceBetween={30}
+              effect={'coverflow'}
+              freeMode={true}
+              grabCursor={true}
+              coverflowEffect={{
+                "rotate": 30,
+                "stretch": 150,
+                "depth": 100,
+                "modifier": 1,
+                "slideShadows": false
+              }}
+              pagination={true}
+            >
+              {suitableBusinesses.map((business, i) => (
+                <SwiperSlide className="h-full !overflow-visible">
+                  <div key={i} className="relative rounded border border-mariner-100 bg-white p-4 lg:p-6 pt-8 leading-loose w-[200px] mx-auto shadow-lg">
+                    <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
+                    <p className="font-bold mb-2">{business.title}</p>
+                    <ul className="fa-ul ml-6 text-sm lg:text-base leading-loose">
+                      {business.businesses.map((niche, i) => (
+                        <li key={i}><span className="fa-li"><FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} className="text-mariner-500 text-sm"/></span>{niche}</li>
+                      ))}
+                    </ul>
+                    <p className="text-sm lg:text-base leading-loose">And more...</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+              </Swiper>
+            {/* </div> */}
+          </div>
+        </div>
+      </section>
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto overflow-hidden">
           <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
@@ -50,24 +100,25 @@ const IndexPage = () => {
             <p className="font-bold text-2xl lg:text-4xl mb-2">Your Personal Ad Analyst Without The 5-Figure Salary</p>
             <p>Whether you’re a solopreneur, SMB, or even a full-fledged enterprise selling goods online, Adtrics can analyze your Facebook campaign in seconds to save you time and money.</p>
           </div>
-          <div className="max-w-6xl mx-auto flex flex-col items-center gap-12 px-4">
+          <div className="max-w-6xl mx-auto flex flex-col items-center justify-center gap-12 px-4">
             <p className="font-medium text-mariner-500 text-sm tracking-wide">SUITABLE BUSINESSES INCLUDE</p>
             {/* <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3 gap-y-8 lg:gap-7"> */}
             <Swiper
-              className="w-full"
+              className="w-[200px]"
               slidesPerView={"auto"} 
               centeredSlides={true}
               spaceBetween={30}
-              pagination={{
-                "clickable": true
-              }}
               effect={'cards'}
               freeMode={true}
+              grabCursor={true}
+              cardsEffect={{
+                "slideShadows": false,
+              }}
             >
               {suitableBusinesses.map((business, i) => (
-                <SwiperSlide className="relative w-1/2">
-                  <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
-                  <div key={i} className="rounded border border-mariner-100 bg-white p-2 lg:p-6 pt-8 leading-loose">
+                <SwiperSlide className="!overflow-visible">
+                  <div key={i} className="relative rounded border border-mariner-100 bg-white p-4 lg:p-6 pt-8 leading-loose">
+                    <img className="transform rotate-[-8deg] absolute -top-6" src={business.icon} width={50} height={50} alt={business.title} />
                     <p className="font-bold mb-2">{business.title}</p>
                     <ul className="fa-ul ml-6 text-sm lg:text-base leading-loose">
                       {business.businesses.map((niche, i) => (
