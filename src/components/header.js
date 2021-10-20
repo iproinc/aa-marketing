@@ -5,30 +5,21 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = ({ siteTitle }) => {
-  const [menuToggle, setMenuToggle] = useLocalStorageState("menuToggle", false);
-  const [menuBGTrigger, setMenuBGTrigger] = useState(90);
-  const [scrollTop, setScrollTop] = useLocalStorageState("scrollY", "");
-  const size = useWindowSize();
+  const [menuToggle, setMenuToggle] = useState(false);
+  const [menuTriggerPoint, setMenuTriggerPoint] = useState(90);
+  const scrollY = useScrollY();
+  const windowSize = useWindowSize();
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setScrollTop(window.scrollY)
-    });
-  })
-
-  useEffect(() => {
-    if( size.width > 786 ) {
-      setMenuBGTrigger(90)
+    if( windowSize.width > 786 ) {
+      setMenuTriggerPoint(90)
     } else {
-      setMenuBGTrigger(50)
+      setMenuTriggerPoint(50)
     }
-  }, [size.width])
-
-  console.log(JSON.parse(menuToggle))
-  console.log(scrollTop)
-
+  }, [windowSize.width])
+  
   return (
-    <header className={`sticky w-full top-0 z-50 ${scrollTop > menuBGTrigger ? "bg-mariner-50 backdrop-filter backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90`}>
+    <header className={`sticky w-full top-0 z-50 ${scrollY > menuTriggerPoint ? "bg-mariner-50 backdrop-filter backdrop-blur-lg" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90`}>
       <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-4 lg:py-6 px-4">
         <Link to="/" >
           <StaticImage src="../images/adtrics-logo-primary.svg" height={40} alt={siteTitle} placeholder="none" />
@@ -40,8 +31,8 @@ const Header = ({ siteTitle }) => {
           <a className="px-4 py-2 text-sm rounded bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setMenuToggle(!JSON.parse(menuToggle))}>
-            <FontAwesomeIcon icon={["fas", `${JSON.parse(menuToggle) !== (false || null) ? "bars" : "times"}`]} className="text-xl lg:text-3xl text-gray-700"/>
+          <button onClick={() => setMenuToggle(!menuToggle)}>
+            <FontAwesomeIcon icon={["fas", `${menuToggle ? "times" : "bars"}`]} className="text-xl lg:text-3xl text-gray-700"/>
           </button>
         </div>
       </div>
@@ -59,17 +50,23 @@ const Header = ({ siteTitle }) => {
   )
 }
 
-// Hook
-const useLocalStorageState = (localStorageKey, defaultKey) => {
-  const [value, setValue] = useState(
-    localStorage.getItem(localStorageKey) || defaultKey
+// Hooks
+function useScrollY() {
+  const [value, setScrollY] = useState(
+    undefined
   );
-
   useEffect(() => {
-    localStorage.setItem(localStorageKey , value);
-  }, [value])
+    // set function to set state
+    function handleScroll() {
+      setScrollY(window.scrollY)
+    }
+    // add event listener for state 
+    window.addEventListener('scroll', handleScroll)
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-  return [value, setValue];
+  return value
 }
 
 
