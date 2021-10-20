@@ -23,7 +23,7 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
-            <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your ROI-Optimizing Decisions</p>
+            <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
             <div>
               <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="https://app.adtrics.com/user/sign_up">Start Your Free Trial Now</a>
               <p className="text-sm">7-Day Free Trial. No Credit Card Required. Cancel Anytime.</p>

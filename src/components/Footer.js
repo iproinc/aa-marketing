@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="w-full my-4 border-b border-gray-200"></div>
         <div className="w-full flex flex-col-reverse md:flex-row justify-between md:items-center gap-6">
-          <p className="text-xs text-gray-500">{data.site.siteMetadata?.title } © Copyright {new Date().getFullYear()}. All Rights Reserved. Subsidiary of iPro Academy </p>
+          <p className="text-xs text-gray-500">{data.site.siteMetadata?.title } © Copyright {new Date().getFullYear()}. All Rights Reserved.</p>
           <div className="flex flex-row gap-6">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-xl"/>
