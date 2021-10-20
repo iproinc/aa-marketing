@@ -34,14 +34,14 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
             <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
-            <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your ROI-Optimizing Decisions</p>
+            <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
             <div>
               <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="https://app.adtrics.com/user/sign_up">Start Your Free Trial Now</a>
               <p className="text-sm">7-Day Free Trial. No Credit Card Required. Cancel Anytime.</p>
             </div>
           </div>
           <div className="lg:mr-[-388px] hidden md:block">
-            <StaticImage className="lg:w-[860px]" src='../images/home/header-graphic.png' width={860} alt="header graphic"/>
+            <StaticImage className="lg:w-[860px]" src='../images/home/header-graphic.png' width={860} alt="header graphic" placeholder="none" />
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@ const IndexPage = () => {
               <p className="text-gray-700">Adtrics will do all the grunt work and provide you with actionable insights to help you achieve your business goals.</p>
             </div>
             <div className="md:w-1/2">
-              <StaticImage src="../images/home/section1-graphic.png" alt="Analyzer Screen" />
+              <StaticImage src="../images/home/section1-graphic.png" alt="Analyzer Screen" placeholder="none" />
             </div>
           </div>
           <div className="flex flex-col md:flex-row-reverse justify-between items-center">
@@ -183,7 +183,7 @@ const IndexPage = () => {
               <p className="text-gray-700">No more generating reports, customizing columns, and pulling your hair to figure out what to do with your data! </p>
             </div>
             <div className="md:w-1/2">
-              <StaticImage src="../images/home/section2-graphic.png" alt="Facebook Integration Screen" />
+              <StaticImage src="../images/home/section2-graphic.png" alt="Facebook Integration Screen" placeholder="none" />
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -193,7 +193,7 @@ const IndexPage = () => {
               <p className="text-gray-700">Our focus is simple: to get you results! </p>
             </div>
             <div className="md:w-1/2">
-              <StaticImage src="../images/home/section3-graphic.png" alt="Campaign Analysis Screen" />
+              <StaticImage src="../images/home/section3-graphic.png" alt="Campaign Analysis Screen" placeholder="none" />
             </div>
           </div>
         </div>
