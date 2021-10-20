@@ -36,17 +36,17 @@ const PricingPage = () => (
           </div>
         </div>
       </div>
-      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-6" style={{ backgroundImage: `url(${BGimage})` }}>
+      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-12" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6">
           <div className="col-span-7 gap-y-4 md:gap-7 flex flex-col items-start">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold leading-snug drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
             <div className="border-b-4 border-mariner-200 w-[120px] "></div>
-            <p className="text-xl font-medium">One Simple Pricing. Not Limited Be Ad Spend.</p>
+            <p className="text-base md:text-xl font-medium">One Simple Pricing. <br className="md:hidden" /> Not Limited Be Ad Spend.</p>
           </div>
         </div>
       </div>
-      <div className="md:hidden w-full mx-auto p-2 pb-4">
-        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-4 w-full max-w-[457px]">
+      <div className="md:hidden w-full mx-auto p-2 pb-12">
+        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow rounded-lg p-4 w-full max-w-[457px]">
           <div>
             <p className="mb-6 font-bold">Billed Yearly</p>
             <p className="mb-2 font-bold text-5xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
@@ -69,8 +69,8 @@ const PricingPage = () => (
           </div>
         </div>
       </div>
-      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] md:py-16 lg:py-28 text-white overflow-hidden">
-        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6 z-30">
+      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] py-16 lg:py-28 text-white overflow-hidden">
+        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 p-4 z-30">
           <div className="col-span-7">
             {features.map((feature, i) => {
               let newText = feature.body.split('\n')
@@ -78,15 +78,15 @@ const PricingPage = () => (
                 <div key={i} className="mb-16">
                   <div className="mb-4 lg:mb-6"><span className="font-medium text-xl mb-6 mr-2">{feature.title}</span>{feature.available === true ? <FontAwesomeIcon icon={["fas", "check"]} className="text-green-500 text-sm align-middle"/> : <span className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Coming Soon!</span> }</div>
                   {newText.map((text, i) => (
-                    <p key={i} className="mb-6">{text}</p>
+                    <p key={i} className="mb-6 text-san-marino-200">{text}</p>
                   ))}
                 </div>
               )
             })}
           </div>
         </div>
-        <StaticImage className="!absolute right-11 -bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
-        <StaticImage className="!absolute right-11 -top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
+        <StaticImage className="!absolute right-32 md:right-11 -bottom-14 md:-bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
+        <StaticImage className="!absolute -right-32 md:right-11 -top-32 md:-top-6 transform rotate-[8deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
       </div>
     </section>
     <section className="bg-white py-16 lg:py-24">

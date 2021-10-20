@@ -33,9 +33,9 @@ const IndexPage = () => {
       <Seo title="Home" />
       <section className="pt-32 pb-16 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
-          <div className="w-full max-w-[635px] gap-5 lg:gap-7 flex flex-col items-start">
-            <h1 className="text-3xl lg:text-5xl font-bold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br /> For eCommerce Advertisers</h1>
-            <p className="text-lg lg:text-xl font-medium text-san-marino-700">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
+          <div className="w-full max-w-[700px] gap-5 lg:gap-7 flex flex-col items-start">
+            <h1 className="text-5xl lg:text-6xl text-left md:text-left font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br className="hidden md:block" /> For eCommerce Advertisers</h1>
+            <p className="text-lg lg:text-xl font-medium text-san-marino-900">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
             <div>
               <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="https://app.adtrics.com/user/sign_up">Start Your Free Trial Now</a>
               <p className="text-sm">7-Day Free Trial. No Credit Card Required. Cancel Anytime.</p>
@@ -69,7 +69,7 @@ const IndexPage = () => {
                   <p className="text-sm lg:text-base leading-loose">And more...</p>
                 </div>
               ))}
-              <Swiper className="!overflow-visible grid grid-cols-1 gap-4 !pb-14 md:hidden" slidesPerView={"auto"}  spaceBetween={30} effect={'coverflow'} freeMode={true} grabCursor={true} coverflowEffect={{ "rotate": 30, "stretch": 150, "depth": 100, "modifier": 1, "slideShadows": false }} pagination={true}>
+              <Swiper className="!overflow-visible grid grid-cols-1 gap-4 !pb-14 md:hidden" slidesPerView={"auto"}  spaceBetween={30} effect={'coverflow'} freeMode={true} grabCursor={true} coverflowEffect={{ "rotate": 30, "stretch": 150, "depth": 100, "modifier": 1, "slideShadows": false }} pagination={true} autoplay={true, {delay: 500, }}>
                 {suitableBusinesses.map((business, i) => (
                   <SwiperSlide key={i} className="h-full !overflow-visible">
                     <div key={i} className="relative rounded border border-mariner-100 bg-white p-4 lg:p-6 pt-8 leading-loose w-[200px] mx-auto shadow-lg">
@@ -131,7 +131,7 @@ const IndexPage = () => {
             <p className="font-bold text-2xl lg:text-4xl mb-2">Converting Your Facebook Ads Data Into Actionable Insights</p>
           </div>
           <div className="w-full mx-auto flex flex-col items-center gap-12 px-4">
-            <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-7">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-y-4 md:gap-7">
               {steps.map((step, i) => (
                 <div key={i} className="flex flex-col gap-2 lg:gap-6 items-start lg:items-center p-4 lg:text-center">
                   <img src={step.icon} width={50} height={50} alt={step.title} />

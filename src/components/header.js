@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
   }, [windowSize.width])
   
   return (
-    <header className={`sticky w-full top-0 z-50 ${scrollY > menuTriggerPoint ? "bg-white backdrop-filter backdrop-blur-md" : "bg-transparent" } transition-all ease-in-out duration-700 bg-opacity-80 text-san-marino-900`}>
+    <header className={`sticky w-full top-0 z-50 ${scrollY > menuTriggerPoint ? "bg-white backdrop-filter backdrop-blur-md" : "bg-transparent" } transition-all ease-in-out duration-700 bg-opacity-90 text-san-marino-900`}>
       <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-4 lg:py-6 px-4">
         <Link to="/" >
           <img src={logo} className="h-[40px]" alt={siteTitle} />
@@ -31,17 +31,21 @@ const Header = ({ siteTitle }) => {
           <a className="px-4 py-2 text-sm rounded bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setMenuToggle(!menuToggle)}>
-            <FontAwesomeIcon icon={["fas", `${menuToggle ? "times" : "bars"}`]} className="text-xl lg:text-3xl text-gray-700"/>
+          <button onClick={() => setMenuToggle(!menuToggle)} className="w-6 h-6">
+            <FontAwesomeIcon icon={["fas", `${menuToggle ? "times" : "bars"}`]} className="text-2xl lg:text-3xl text-gray-700 w-full h-full"/>
           </button>
         </div>
       </div>
       {JSON.parse(menuToggle) === true ?
-        <div className="absolute h-screen w-full z-50 bg-white backdrop-blur-sm p-6 shadow flex flex-col gap-6">
-          <Link className="px-4" to="/about">About</Link>
-          <Link className="px-4" to="/pricing">Pricing</Link>
-          <a className="px-4 py-2 rounded bg-gray-100" href="https://app.adtrics.com/user/sign_in">Sign In</a>
-          <a className="px-4 py-2 rounded bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
+        <div className="absolute h-[400px] w-full z-40 px-6 py-8 flex flex-col justify-between gap-y-8 rounded-b-2xl border-t border-gray-100 bg-white backdrop-filter backdrop-blur-md bg-opacity-90 shadow-2xl">
+          <div className="grid grid-cols-1 gap-8 font-medium text-lg">
+            <Link to="/about">About</Link>
+            <Link to="/pricing">Pricing</Link>
+          </div>
+          <div className="grid grid-cols-2 gap-6 border-t border-gray-100 pt-8">
+            <a className="px-4 py-2 rounded text-center bg-gradient-to-br from-gray-100 via-white to-gray-100 border border-gray-200" href="https://app.adtrics.com/user/sign_in">Sign In</a>
+            <a className="px-4 py-2 rounded text-center bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
+          </div>
         </div>
         :      
         null

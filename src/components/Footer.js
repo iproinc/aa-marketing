@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '../images/adtrics-logo-primary.svg'
 
@@ -22,12 +21,12 @@ const Footer = () => {
             <img src={logo} className="h-[40px]" alt={data.site.siteMetadata?.title} />
           </Link>
           <div className="flex flex-col md:flex-row gap-6 text-sm">
-            <div className="flex flex-col leading-8">
+            <div className="flex flex-col leading-10">
               <p className="font-bold text-base mb-2">Company</p>
               <Link to="/about" >About</Link>
               <Link to="/pricing" >Pricing</Link>
             </div>
-            <div className="flex flex-col leading-8">
+            <div className="flex flex-col leading-10">
               <p className="font-bold text-base mb-2">Compliance</p>
               <Link to="/private-policy" >Private Policy</Link>
               <Link to="/terms-of-use" >Terms Of Use</Link>
@@ -35,9 +34,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-full my-4 border-b border-gray-200"></div>
-        <div className="w-full flex flex-col-reverse md:flex-row justify-between md:items-center gap-6">
+        <div className="w-full flex flex-col-reverse md:flex-row justify-between md:items-center">
           <p className="text-xs text-gray-500">{data.site.siteMetadata?.title } © Copyright {new Date().getFullYear()}. All Rights Reserved.</p>
-          <div className="flex flex-row gap-6">
+          <div className="flex flex-row gap-6 mb-6">
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-xl"/>
             </a>
