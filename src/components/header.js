@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => {
   const [menuBGTrigger, setMenuBGTrigger] = useState(90);
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
-  const { width } = useWindowDimensions();
+  const size = useWindowSize();
 
   const onScroll = (e) => {
     setScrollTop(e.target.documentElement.scrollTop)
@@ -21,12 +21,13 @@ const Header = ({ siteTitle }) => {
   })
 
   useEffect(() => {
-    if( width > 786 ) {
+    if( size.width > 786 ) {
       setMenuBGTrigger(90)
     } else {
       setMenuBGTrigger(50)
     }
-  }, [width])
+  }, [size.width])
+
 
   return (
     <header className={`sticky w-full top-0 z-50 ${scrollTop > menuBGTrigger || scrollTop > 90 ? "bg-mariner-50 backdrop-filter backdrop-blur-lg border-gray-100" : "bg-transparent"} transition-all ease-in-out duration-500 bg-opacity-90 border-b border-gray-transparent`}>
@@ -66,27 +67,24 @@ const Header = ({ siteTitle }) => {
   )
 }
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-export function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
+// Hook
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
   useEffect(() => {
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  return windowDimensions;
+  return windowSize;
 }
 
 Header.propTypes = {
