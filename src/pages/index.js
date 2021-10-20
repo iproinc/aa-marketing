@@ -46,7 +46,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <section className="bg-white pt-16 pb-6 md:py-16 overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
@@ -90,7 +89,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <section className="bg-white py-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-y-12 lg:gap-y-36">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -125,7 +123,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <section className="bg-white py-16">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
@@ -146,7 +143,6 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-
       <Cta 
         heading="Your Personal Ad Analyst At Your Service"
         button="Start Your Free Trial"
