@@ -37,16 +37,16 @@ const Footer = () => {
         <div className="w-full flex flex-col-reverse md:flex-row justify-between md:items-center">
           <p className="text-xs text-gray-500">{data.site.siteMetadata?.title } © Copyright {new Date().getFullYear()}. All Rights Reserved.</p>
           <div className="flex flex-row gap-6 mb-6">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://facebook.com/adtricshq" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-xl"/>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com/adtrics" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "instagram"]} className="text-xl"/>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/company/adtrics" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} className="text-xl"/>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/adtrics" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={["fab", "twitter"]} className="text-xl"/>
             </a>
           </div>
