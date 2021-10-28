@@ -47,5 +47,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-client-side-redirect`
   ],
 }

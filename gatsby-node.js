@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
+const redirects = require("./redirects.json");
+exports.createPages = async ({ graphql, actions }) => {
+	const { createRedirect } = actions;
+	
+	redirects.forEach(redirect => 
+		createRedirect({
+	    fromPath: redirect.fromPath,
+	    toPath: redirect.toPath,
+	  })
+	);
+}
