@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => {
           <Link to="/about">About</Link>
           <Link to="/pricing">Pricing</Link>
           <a className="px-4 py-2 text-sm rounded bg-gradient-to-br from-gray-100 via-white to-gray-100 border border-gray-200" href="https://app.adtrics.com/user/sign_in">Sign In</a>
-          <a className="px-4 py-2 text-sm rounded bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
+          {/* <a className="px-4 py-2 text-sm rounded bg-san-marino-500 text-white" href="/">Sign Up</a> */}
         </div>
         <div className="md:hidden">
           <button onClick={() => setMenuToggle(!menuToggle)} className="w-6 h-6">
@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className="grid grid-cols-2 gap-6 border-t border-gray-100 pt-8">
             <a className="px-4 py-2 rounded text-center bg-gradient-to-br from-gray-100 via-white to-gray-100 border border-gray-200" href="https://app.adtrics.com/user/sign_in">Sign In</a>
-            <a className="px-4 py-2 rounded text-center bg-san-marino-500 text-white" href="https://app.adtrics.com/user/sign_up">Sign Up</a>
+            {/* <a className="px-4 py-2 rounded text-center bg-san-marino-500 text-white" href="/">Sign Up</a> */}
           </div>
         </div>
         :      

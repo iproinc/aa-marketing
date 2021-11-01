@@ -31,7 +31,7 @@ const PricingPage = () => (
           </div>
           <div className="md:my-4 lg:my-6 border-b border-gray-200"></div>
           <div>
-            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="https://app.adtrics.com/user/sign_up">Start My Free Trial Now</a>
+            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="/">Start My Free Trial Now</a>
             <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const PricingPage = () => (
           </div>
           <div className="my-4 border-b border-gray-200"></div>
           <div>
-            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="https://app.adtrics.com/user/sign_up">Start My Free Trial Now</a>
+            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="/">Start My Free Trial Now</a>
             <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
           </div>
         </div>

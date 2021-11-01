@@ -37,7 +37,7 @@ const IndexPage = () => {
             <h1 className="text-5xl lg:text-6xl text-left md:text-left font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br className="hidden md:block" /> For eCommerce Advertisers</h1>
             <p className="text-lg lg:text-xl font-medium text-san-marino-900">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
             <div>
-              <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="https://app.adtrics.com/user/sign_up">Start Your Free Trial Now</a>
+              <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="/">Start Your Free Trial Now</a>
               <p className="text-sm">7-Day Free Trial. No Credit Card Required. Cancel Anytime.</p>
             </div>
           </div>
