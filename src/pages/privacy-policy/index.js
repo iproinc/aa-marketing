@@ -6,7 +6,7 @@ import Seo from '../../components/seo'
 function PrivacyPolicyPage() {
   return (
     <Layout>
-      <Seo title="Private Policy" />
+      <Seo title="Privacy Policy" />
       <section className="max-w-6xl w-full mx-auto pt-20 px-4 text-gray-700">
         <h1 className="mb-11 text-2xl font-medium">Privacy Policy</h1>
         <p className="mb-11">Adtrics.com takes your right to privacy seriously, and wants you to feel comfortable using our web site. Adtrics ("us", "we", or "our") operates the https://adtrics.com website and the Adtrics application (the "Service"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. <br /><br /> We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>

@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="flex flex-col leading-10">
               <p className="font-bold text-base mb-2">Compliance</p>
               <Link to="/privacy-policy" >Privacy Policy</Link>
-              <Link to="/terms-of-use" >Terms Of Use</Link>
+              <Link to="/terms-and-conditions" >Terms & Conditions</Link>
             </div>
           </div>
         </div>
