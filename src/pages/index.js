@@ -37,8 +37,8 @@ const IndexPage = () => {
             <h1 className="text-5xl lg:text-6xl text-left md:text-left font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br className="hidden md:block" /> For eCommerce Advertisers</h1>
             <p className="text-lg lg:text-xl font-medium text-san-marino-900">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
             <div>
-              <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="/">Start Your Free Trial Now</a>
-              <p className="text-sm">7-Day Free Trial. No Credit Card Required. Cancel Anytime.</p>
+              <a className="rounded bg-[#0083FC] font-semibold md:text-xl text-white text-center px-8 md:px-4 py-2 inline-block mb-3" href="/">Try Now For Free</a>
+              <p className="text-sm">No Sign Up Or Credit Card Required.</p>
             </div>
           </div>
           <div className="lg:mr-[-388px] hidden md:block">
@@ -94,7 +94,7 @@ const IndexPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6">
               <p className="font-bold text-xl lg:text-2xl">Facebook A.I. Analyzer</p>
-              <p className="text-gray-700">Take the guesswork out of analyzing your Facebook campaigns and feel confident knowing exactly what to do next to optimize your ad spend!</p>
+              <p className="text-gray-700">Take the guesswork away when analyzing your Facebook campaigns and feel confident knowing exactly what to do next to optimize your ad spend!</p>
               <p className="text-gray-700">Adtrics will do all the grunt work and provide you with actionable insights to help you achieve your business goals.</p>
             </div>
             <div className="md:w-1/2">
@@ -114,7 +114,7 @@ const IndexPage = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6">
               <p className="font-bold text-xl lg:text-2xl">Unlimited Campaign Analysis </p>
-              <p className="text-gray-700">Run as many campaign analysis as you want with no extra change regardless of how much you spend on ads. </p>
+              <p className="text-gray-700">Run as many campaign analyses as you want with no extra charge regardless of how much you spend on ads. </p>
               <p className="text-gray-700">Our focus is simple: to get you results! </p>
             </div>
             <div className="md:w-1/2">
@@ -143,10 +143,10 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <Cta 
+      <Cta
         heading="Your Personal Ad Analyst At Your Service"
-        button="Start Your Free Trial"
-        finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
+        button="Try Now For Free"
+        finePrint="No Sign Up Or Credit Card Required."
       />
     </Layout>
   )
@@ -194,17 +194,17 @@ const suitableBusinesses = [
 const steps = [
   {
     title: "Step 1: Setting Your Benchmark KPIs",
-    body: "Let Adtrics know your product-specific data for the campaign that you’re running and find out exactly what your minimum and maximum target KPI benchmarks are to be profitable. Adtrics makes sure that you stay on track without needing to waste another dime with your advertising spend. ",
+    body: "Let Adtrics know your product-specific data for the campaign that you’re running and find out exactly what your minimum and maximum target KPI benchmarks are to be profitable. Adtrics makes sure that you stay on track without needing to waste another dime on your advertising spend. ",
     icon: settingsIcon,
   },
   {
     title: "Step 2: Analyzing Your Campaign Performance",
-    body: "Simply indicate the Facebook campaign in the specific timeframe you wish to analyze and Adtrics will do all the grunt work for you. Literally with just a click of the button and a few milliseconds later, you will get a low-down of your campaign performance and feel confident knowing exactly what to do next.",
+    body: "Simply indicate the Facebook campaign in the specific timeframe you wish to analyze and Adtrics will do all the grunt work for you. Literally with just a click of the button and a few milliseconds later, you will get a low-down of your campaign performance across all three ads levels: campaign, ad set, and ad with actionable insights that you can implement right away.",
     icon: analyzeIcon,
   },
   {
     title: "Step 3: Transforming Your Data Into ROI-Driven Actions",
-    body: "Adtrics tells you exactly if a campaign should be monitored further or pause it quickly so that you will know exactly what to do next with your data. Adtrics even provides you with opportunity insights to improve your campaign performance to maximize your ad spend and achieve a greater ROI.",
+    body: "Adtrics tells you exactly if you should monitor or pause a campaign so that you will know exactly what to do with your data next.. Adtrics even provides you with actionable, opportunity insights to improve your campaign performance and maximize your return on advertising spend.",
     icon: dataIcon,
   },
 ]
