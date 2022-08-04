@@ -129,17 +129,33 @@ const PricingPage = () => (
         <div className="relative max-w-4xl w-full mx-auto p-4">
           <div >
             <p className="font-bold text-white text-3xl mb-12">Join Adtrics Premium To Get Unlimited Analyses & Deeper Insights On Your Facebook Campaigns</p>
-            {features.map((feature, i) => {
-              let newText = feature.body.split('\n')
-              return (
-                <div key={i} className="mb-16">
-                  <div className="mb-4 lg:mb-6"><span className="font-medium text-xl mb-6 mr-2">{feature.title}</span>{feature.available === true ? <FontAwesomeIcon icon={["fas", "check"]} className="text-green-500 text-sm align-middle"/> : <span className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Coming Soon!</span> }</div>
-                  {newText.map((text, i) => (
-                    <p key={i} className="mb-6 text-san-marino-200">{text}</p>
-                  ))}
-                </div>
-              )
-            })}
+            {
+              features.map((feature, i) => {
+                let newText = feature.body.split('\n')
+                return (
+                  <div key={i} className="mb-16">
+                    <div className="mb-2">
+                      <span className="font-medium text-xl mb-6 mr-2">
+                        {
+                          feature.title
+                        }
+                      </span>
+                      {
+                        feature.available === true ?
+                          <FontAwesomeIcon icon={["fas", "check"]} className="text-green-500 text-sm align-middle"/>
+                        :
+                          <span className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Coming Soon!</span>
+                      }
+                    </div>
+                    {
+                      newText.map((text, i) => (
+                        <p key={i} className="mb-6 text-san-marino-200">{text}</p>
+                      ))
+                    }
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
         <StaticImage className="!absolute right-32 md:right-11 -bottom-14 md:-bottom-6 transform rotate-[-188deg] z-10" src="../images/grid-dots.png" alt="grid-dots" width={324} height={324} placeholder="none" />
@@ -149,10 +165,10 @@ const PricingPage = () => (
     <section className="bg-white py-16 lg:py-24">
       <div className="md:max-w-xl lg:max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
-        <div className="flex flex-col flex-wrap gap-6 xl:h-[540px] justify-between">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4">
           {faqs.map((faq, i) => {
             return (
-              <div key={i} className="bg-gray-50 rounded-lg p-6 w-full xl:w-1/2">
+              <div key={i} className={`bg-gray-50 rounded-lg p-6 w-full ${i === 4 ? "col-span-2" : null}`}>
                 <p className="text-san-marino-500 font-medium mb-4">{faq.question}</p>
                 <p>{faq.answer}</p>
               </div>
@@ -162,9 +178,10 @@ const PricingPage = () => (
       </div>
     </section>
     <Cta
-      heading="Let Us Analyze Your Ads For You "
-      button="Start Your Free Trial"
-      finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
+      heading="Create An Account Today & Try Out Adtrics For Free."
+      subHeading="Still Need More Time?"
+      button="Get Started For Free"
+      finePrint="Free Forever. No Credit Card Required."
     />
   </Layout>
 )
@@ -172,7 +189,27 @@ const PricingPage = () => (
 const features = [
   {
     title: "Facebook A.I. Analyzer",
-    body: "Take the guesswork out of analyzing your Facebook campaigns and feel confident knowing exactly what to do next to optimize your ad spend! \n Adtrics will do all the grunt work and provide you with actionable insights to help you achieve your business goals. ",
+    body: "Let Adtrics turn your Facebook campaign data into actionable, conversion-boosting insights to help you optimize your ad spend. Our goal is to help you achieve greater results for your business goals.",
+    available: true,
+  },
+  {
+    title: "Unlimited Basic Analyses",
+    body: "Know your numbers before you make any marketing decisions. Use our Basic Analyzer to run different campaign performance scenarios to predict if your funnel is viable or not.",
+    available: true,
+  },
+  {
+    title: "Unlimited Advanced Analyses",
+    body: "Run as many campaign analyses as you want with no extra charge regardless of how much you spend on ads! Adtrics will do the heavy lifting for you and provide you with actionable insights across all three campaign levels: campaign, ad set, and ad to maximize your advertising spend.",
+    available: true,
+  },
+  {
+    title: "Multi-Product AOV Analysis",
+    body: "Got an entire sales funnel with upsells and downsells? Adtrics will consider your entire funnel to analyze your Facebook campaigns and give you the benchmark numbers needed to be profitable.",
+    available: true,
+  },
+  {
+    title: "Product Data Set Creation",
+    body: "Provide us with your product data and Adtrics will let you know the benchmark numbers you need to aim for to ensure profitability of your campaigns.",
     available: true,
   },
   {
@@ -181,52 +218,32 @@ const features = [
     available: true,
   },
   {
-    title: "Unlimited Campaign Analysis",
-    body: "Run as many campaign analysis as you want with no extra change regardless of how much you spend on ads. Our focus is simple: to get you results! ",
-    available: true,
-  },
-  {
     title: "Shopify Integration",
-    body: "Connect your Shopify store with Adtrics so that no manual data input is required and you can even use your offer’s exact conversion rate and AOV to analyze your campaigns! ",
-    available: false,
-  },
-  {
-    title: "Automated KPI Rules",
-    body: "Set your campaign performance targets using KPI metrics that matter to you and Adtrics will monitor them like a hawk for you 24/7. ",
-    available: false,
-  },
-  {
-    title: "Instant Campaign Notifications",
-    body: "Get instantly notified through email and desktop push notifications the moment your campaign performance targets are reached so that you can take action right away! ",
-    available: false,
-  },
-  {
-    title: "Multi-Product AOV Analysis",
-    body: "Got an entire sales funnel with upsells and downsells? Adtrics will consider your entire funnel to analyze your Facebook campaigns and give you the benchmark numbers needed to be profitable.",
-    available: false,
+    body: "Connect your Shopify store with Adtrics so that no manual data input is required and you can even use your products’ exact conversion rates and AOV to analyze your campaigns.",
+    available: true,
   },
 ]
 
 const faqs = [
   {
     question: "Who Is Adtrics Suitable For?",
-    answer: "If you’re running an offer on Facebook ads, and you’re looking to save time, money, and effort when it comes to analyzing your campaign performance, then Adtrics is the solution for you. Our Facebook A.I. analyzer will study your campaigns and tell you exactly what you need to do to achieve greater results and growth for your business. ",
+    answer: "If you’re advertising on Facebook, and you’re looking to save time, money, and effort when it comes to analyzing your Facebook campaigns, then Adtrics is the solution for you. Our Facebook A.I. analyzer will study your campaigns and tell you exactly what you need to do to achieve greater results and optimize your return on ad spend.",
   },
   {
     question: "How Is Adtrics Better Compared To Facebook’s Own Reporting With Ads Manager?",
-    answer: "We see Adtrics and Facebook Ads Manager to work hand-in-hand. In fact, with our Facebook Ad Integration, we are able to pull your campaign data directly from Facebook to analyze and provide you with actionable insights to maximize your ad spend! In short, Facebook’s own reporting only gives you the data, while Adtrics takes the data and turns them into results-driven next steps that you can do to achieve your campaign goals. ",
-  },
-  {
-    question: "Does The Trial Have Any Limitations?",
-    answer: "Our 7-day free trial allows you to test drive Adtrics in its fullest potential so that you can immediately take our actionable insights to optimize your Facebook campaigns. ",
+    answer: "We see Adtrics and Facebook Ads Manager working hand-in-hand, rather than competing against each other. In fact, with our Facebook Integration, we are able to pull your campaign data directly from Facebook for analysis and provide you with actionable insights to maximize your ad spend! In short, Facebook’s own reporting only gives you the data, while Adtrics converts that data into results-driven next steps to help you achieve your campaign goals and grow your business.",
   },
   {
     question: "How Many Ad Accounts Can I Connect To Adtrics?",
-    answer: "First off, you’re awesome for working on multiple ad accounts at the same time - it’s definitely not easy! Unfortunately, at this time, you can only connect 1 Facebook ad account with Adtrics, but we’re working to accommodate multiple ad accounts in the near future. ",
+    answer: "First off, you’re awesome for working on multiple ad accounts at the same time - it’s definitely a lot of work! Unfortunately, at this time, you can only connect 1 Facebook ad account with Adtrics but we’re working to accommodate multiple ad accounts in the near future. ",
   },
   {
     question: "How Do I Cancel?",
-    answer: "You may cancel Adtrics any time and your subscription will stay active until the end of your current billing cycle.",
+    answer: "Unlike hiring a full-time Facebook Data Analyst with contracts and obligations, you can cancel Adtrics at any time you wish. Your subscription will remain active until the end of your billing cycle. ",
+  },
+  {
+    question: "Can I Try Adtrics For Free? ",
+    answer: "Yes! Simply sign up for a free account right here and witness the power of Adtrics yourself! The free account has a daily analysis limit and will only provide top campaign level analysis. If you want to get deeper insights into your campaign performance, upgrade to Premium for unlimited access.",
   },
 ]
 
