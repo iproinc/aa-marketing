@@ -32,7 +32,7 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Home" />
       <section className="pt-32 pb-16 lg:pt-40 mt-[-72px] lg:mt-[-104px] h-full lg:min-h-[700px] bg-cover bg-bottom flex overflow-hidden px-6" style={{ backgroundImage: `url(${BGimage})` }}>
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-x-6">
           <div className="w-full max-w-[700px] gap-5 lg:gap-7 flex flex-col items-start">
             <h1 className="text-5xl lg:text-6xl text-left md:text-left font-extrabold leading-tight drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Facebook Ads Insights <br className="hidden md:block" /> For eCommerce Advertisers</h1>
             <p className="text-lg lg:text-xl font-medium text-san-marino-900">Eliminate The Guesswork And Be Data-Informed For All Your <br className="hidden md:block" /> ROI-Optimizing Decisions</p>
@@ -47,7 +47,7 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="bg-white pt-16 pb-6 md:py-16 overflow-hidden">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mx-auto text-center flex flex-col items-center gap-4 lg:gap-6 px-4 mb-14">
             <p className="font-medium text-lg lg:text-2xl bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-indigo-500">Introducing Adtrics</p>
             <div className="border-b-4 border-mariner-100 w-24"></div>
@@ -90,7 +90,7 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto flex flex-col gap-y-12 lg:gap-y-36">
+        <div className="max-w-7xl mx-auto flex flex-col gap-y-12 lg:gap-y-36">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-1/2 flex flex-col gap-6 p-6">
               <p className="font-bold text-xl lg:text-2xl">Facebook A.I. Analyzer</p>

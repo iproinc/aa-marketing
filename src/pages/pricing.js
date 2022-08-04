@@ -12,66 +12,123 @@ const PricingPage = () => (
   <Layout>
     <Seo title="Pricing" />
     <section>
-      <div className="hidden sticky top-28 lg:top-36 mt-[-500px] lg:mt-[-700px] max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 z-40 pb-12 px-6">
-        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow-2xl rounded-lg p-4 lg:p-12 w-full max-w-[457px]">
-          <div>
-            <p className="mb-6 font-bold">Billed Yearly</p>
-            <p className="mb-2 font-bold text-5xl lg:text-6xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
-            <p className="mb-3 font-medium text-xs px-2 py-[2px] bg-yellow-400 rounded inline-block">(~$83 USD Per Month)</p>
-            <p className="text-sm lg:text-base">Just one fancy dinner per month</p>
+      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] bg-cover bg-bottom flex flex-col items-center py-12 gap-12 z-10" style={{ backgroundImage: `url(${BGimage})` }}>
+        <div className="max-w-4xl w-full mx-auto px-6 flex flex-col items-center justify-center gap-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug drop-shadow-sm bg-clip-text text-center text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600 p-2">Never Be Confused With Your Facebook Campaign Data Again</h1>
+          <p className="text-base md:text-xl text-gray-500 text-center">Simple Pricing. <br className="md:hidden" /> Not Limited Be Ad Spend.</p>
+        </div>
+        <div className="max-w-6xl w-full mx-auto md:px-6 md:flex flex-col text-gray-800 text-sm hidden">
+          <div className="w-full flex flex-row">
+            <div className="w-1/4"></div>
+            {
+              plans.map((plan, i) => {
+                return (
+                  <div key={i} className="w-1/4 flex flex-col">
+                    <div className="p-2 xl:p-6 border-b border-gray-200  xl:text-xl font-semibold">
+                      {plan.plan}
+                    </div>
+                    <div className="p-2 xl:p-6 flex flex-col justify-between h-full">
+                      <div className="mb-6 xl:mb-12">
+                        <p className="text-2xl lg:text-4xl xl:text-5xl font-bold text-gray-800 mb-2">
+                          {plan.price}
+                          <span className="text-base xl:text-2xl">USD</span>
+                        </p>
+                        {i === 2 ? <p className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Most Popular - Save 16%</p> : null}
+                      </div>
+                      <a href={plan.link} className="py-2 flex justify-center items-center rounded border border-mariner-600 text-white bg-mariner-500 hover:bg-mariner-600 hover:transition-all ease-in-out duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <p>Select Plan</p>
+                      </a>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
-          <div className="my-4 lg:my-6 border-b border-gray-200"></div>
-          <div>
-            <ul className="fa-ul ml-6 font-medium">
-              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "infinity"]} className="text-mariner-200 text-sm"/></span>Unlimited Campaign Analysis</li>
-              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "ad"]} className="text-mariner-200 text-sm"/></span>No Maximum Ad Spend</li>
-              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-mariner-200 text-sm"/></span>Facebook Integration</li>
-              <li className="mb-4 lg:mb-6 text-sm lg:text-base"><span className="fa-li"><FontAwesomeIcon icon={["fas", "bullhorn"]} className="text-mariner-200 text-sm"/></span>1 Facebook Ad Account</li>
-            </ul>
+          <div className="flex flex-col">
+            {
+              Object.keys(plans[0].features).map((feature, i) => {
+                return (
+                  <div key={i} className="flex flex-row odd:bg-gray-500/5">
+                    <div className="p-6 w-1/4 flex justify-start items-center">
+                      {feature}
+                    </div>
+                    {
+                      plans.map((plan, j) => {
+                        let values = Object.values(plan.features)
+                        if(values[i] === true) {
+                          return (
+                            <div key={j} className="py-6 w-1/4 flex justify-center items-center">
+                              <FontAwesomeIcon icon={["fas", "check-circle"]}/>
+                            </div>
+                          )
+                        } else {
+                          return (
+                            <div key={j} className="p-6 w-1/4 flex justify-center items-center">
+                              {values[i]}
+                            </div>
+                          )
+                        }
+                      })
+                    }
+                  </div>
+                )
+              })
+            }
           </div>
-          <div className="md:my-4 lg:my-6 border-b border-gray-200"></div>
-          <div>
-            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="/">Start My Free Trial Now</a>
-            <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
+        </div>
+        <div className="max-w-6xl w-full mx-auto flex flex-col text-gray-800 text-sm md:hidden">
+          <div className="w-full flex flex-col gap-4 p-4">
+            {
+              plans.map((plan, i) => {
+                return (
+                  <div key={i} className={`flex flex-col p-6 bg-gray-50 rounded-lg border border-gray-100 gap-6 ${ i === 2 ? "border-2 border-mariner-300 shadow-lg shadow-mariner-400/50" : null }`}>
+                    <div className="p-2 border-b border-gray-200 text-xl font-semibold">
+                      {plan.plan}
+                    </div>
+                    <div className="p-2 flex flex-col justify-between h-full gap-4">
+                      <div>
+                        <p className="text-5xl font-semibold text-gray-800">
+                          {plan.price}
+                          <span className="text-xl">USD</span>
+                        </p>
+                        {i === 2 ? <p className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Most Popular - Save 16%</p> : null}
+                      </div>
+                      <div>
+                        {
+                          Object.keys(plan.features).map((feature, i) => {
+                            return (
+                              <div key={i} className="flex flex-row odd:bg-gray-500/5">
+                                <div className="w-1/2 p-4 flex justify-start items-center">
+                                  {feature}
+                                </div>
+                                <div className="w-1/2 p-4 flex justify-center items-center">
+                                  {
+                                    Object.values(plan.features)[i] === true ?
+                                      <FontAwesomeIcon icon={["fas", "check-circle"]}/>
+                                    :
+                                      <p>{Object.values(plan.features)[i]}</p>
+                                  }
+                                </div>
+                              </div>
+                            )
+                          })
+                        }
+                      </div>
+                      <a href={plan.link} className="py-2 flex justify-center items-center rounded border border-mariner-600 text-white bg-mariner-500 hover:bg-mariner-600 hover:transition-all ease-in-out duration-300 hover:shadow-xl hover:-translate-y-2">
+                        <p>Select Plan</p>
+                      </a>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
-      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] lg:min-h-[650px] bg-cover bg-bottom flex items-center py-12" style={{ backgroundImage: `url(${BGimage})` }}>
-        <div className="max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 px-6">
-          <div className="col-span-7 gap-y-4 md:gap-7 flex flex-col items-start">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold leading-snug drop-shadow-sm bg-clip-text text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600">Never Be Confused With Your Facebook Campaign Data Again</h1>
-            <div className="border-b-4 border-mariner-200 w-[120px] "></div>
-            <p className="text-base md:text-xl font-medium">One Simple Pricing. <br className="md:hidden" /> Not Limited Be Ad Spend.</p>
-          </div>
-        </div>
-      </div>
-      <div className="md:hidden w-full mx-auto p-2 pb-12">
-        <div className="col-span-5 col-start-8 bg-white border-[6px] border-gray-50 shadow rounded-lg p-4 w-full max-w-[457px]">
-          <div>
-            <p className="mb-6 font-bold">Billed Yearly</p>
-            <p className="mb-2 font-bold text-5xl text-san-marino-800">$997<span className="text-base font-bold text-san-marino-500 align-top ml-1">USD</span></p>
-            <p className="mb-3 font-medium text-xs px-2 py-[2px] bg-yellow-400 rounded inline-block">(~$83 USD Per Month)</p>
-            <p className="text-base">Just one fancy dinner per month</p>
-          </div>
-          <div className="my-4 border-b border-gray-200"></div>
-          <div>
-            <ul className="fa-ul ml-6 font-medium">
-              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "infinity"]} className="text-mariner-200 text-sm"/></span>Unlimited Campaign Analysis</li>
-              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "ad"]} className="text-mariner-200 text-sm"/></span>No Maximum Ad Spend</li>
-              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fab", "facebook-square"]} className="text-mariner-200 text-sm"/></span>Facebook Integration</li>
-              <li className="mb-4 text-sm"><span className="fa-li"><FontAwesomeIcon icon={["fas", "bullhorn"]} className="text-mariner-200 text-sm"/></span>1 Facebook Ad Account</li>
-            </ul>
-          </div>
-          <div className="my-4 border-b border-gray-200"></div>
-          <div>
-            <a className="rounded-lg bg-[#0083FC] font-semibold lg:text-xl text-white text-center px-4 py-2 block mb-3 hover:shadow-lg transition-all ease-in-out" href="/">Start My Free Trial Now</a>
-            <p className="text-xs lg:text-sm text-center">7-Day Free Trial. <br /> No Credit Card Required. Cancel Anytime.</p>
-          </div>
-        </div>
-      </div>
-      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] py-16 lg:py-28 text-white overflow-hidden">
-        <div className="relative max-w-6xl w-full mx-auto md:grid grid-cols-12 gap-6 p-4 z-30">
-          <div className="col-span-7">
+      <div className="relative bg-gradient-to-b from-[#1D2F56] to-[#0F182B] py-16 lg:pb-28 lg:pt-32 text-white overflow-hidden">
+        <div className="relative max-w-4xl w-full mx-auto p-4">
+          <div >
+            <p className="font-bold text-white text-3xl mb-12">Join Adtrics Premium To Get Unlimited Analyses & Deeper Insights On Your Facebook Campaigns</p>
             {features.map((feature, i) => {
               let newText = feature.body.split('\n')
               return (
@@ -92,10 +149,10 @@ const PricingPage = () => (
     <section className="bg-white py-16 lg:py-24">
       <div className="md:max-w-xl lg:max-w-6xl w-full mx-auto px-2">
         <p className="text-4xl font-bold text-center mb-12 text-san-marino-900">Frequently Asked Questions</p>
-        <div className="flex flex-col flex-wrap gap-6 lg:h-[540px] justify-between">
+        <div className="flex flex-col flex-wrap gap-6 xl:h-[540px] justify-between">
           {faqs.map((faq, i) => {
             return (
-              <div key={i} className="bg-gray-50 rounded-lg p-6 w-full lg:w-1/2">
+              <div key={i} className="bg-gray-50 rounded-lg p-6 w-full xl:w-1/2">
                 <p className="text-san-marino-500 font-medium mb-4">{faq.question}</p>
                 <p>{faq.answer}</p>
               </div>
@@ -104,7 +161,7 @@ const PricingPage = () => (
         </div>
       </div>
     </section>
-    <Cta 
+    <Cta
       heading="Let Us Analyze Your Ads For You "
       button="Start Your Free Trial"
       finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
@@ -171,6 +228,51 @@ const faqs = [
     question: "How Do I Cancel?",
     answer: "You may cancel Adtrics any time and your subscription will stay active until the end of your current billing cycle.",
   },
+]
+
+const plans = [
+  {
+    plan: "FREE",
+    price: "$0",
+    link: "./",
+    features: {
+      "Facebook Ad Account Integration": true,
+      "Shopify Product Data Integration": true,
+      "Basic Analysis: Manual Data Input": "Limit 2 Per Day",
+      "Advanced Analysis: Campaign Level": "Limit 2 Per Day",
+      "Advanced Analysis: Ad Set Level": true,
+      "Advanced Analysis: Ad Level": true,
+      "Product Data Set Creation": true,
+    }
+  },
+  {
+    plan: "3-Month Subscription",
+    price: "$297",
+    link: "./",
+    features: {
+      "Facebook Ad Account Integration": true,
+      "Shopify Product Data Integration": true,
+      "Basic Analysis: Manual Data Input": "Unlimited",
+      "Advanced Analysis: Campaign Level": "Unlimited",
+      "Advanced Analysis: Ad Set Level": "Unlimited",
+      "Advanced Analysis: Ad Level": "Unlimited",
+      "Product Data Set Creation": true,
+    }
+  },
+  {
+    plan: "12-Month Subscription",
+    price: "$997",
+    link: "./",
+    features: {
+      "Facebook Ad Account Integration": true,
+      "Shopify Product Data Integration": true,
+      "Basic Analysis: Manual Data Input": "Unlimited",
+      "Advanced Analysis: Campaign Level": "Unlimited",
+      "Advanced Analysis: Ad Set Level": "Unlimited",
+      "Advanced Analysis: Ad Level": "Unlimited",
+      "Product Data Set Creation": true,
+    }
+  }
 ]
 
 export default PricingPage

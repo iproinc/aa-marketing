@@ -17,10 +17,10 @@ const Header = ({ siteTitle }) => {
       setMenuTriggerPoint(50)
     }
   }, [windowSize.width])
-  
+
   return (
     <header className={`sticky w-full top-0 z-50 ${scrollY > menuTriggerPoint ? "bg-white backdrop-filter backdrop-blur-md" : "bg-transparent" } transition-all ease-in-out duration-700 bg-opacity-90 text-san-marino-900`}>
-      <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto flex flex-row justify-between items-center py-4 lg:py-6 px-4">
+      <div className="relative w-full md:max-w-2xl lg:max-w-4xl xl:max-w-7xl mx-auto flex flex-row justify-between items-center py-4 lg:py-6 px-4">
         <Link to="/" >
           <img src={logo} className="h-[40px]" alt={siteTitle} />
         </Link>
@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => {
             {/* <a className="px-4 py-2 rounded text-center bg-san-marino-500 text-white" href="/">Sign Up</a> */}
           </div>
         </div>
-        :      
+        :
         null
       }
     </header>
@@ -64,7 +64,7 @@ function useScrollY() {
     function handleScroll() {
       setScrollY(window.scrollY)
     }
-    // add event listener for state 
+    // add event listener for state
     window.addEventListener('scroll', handleScroll)
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll)
