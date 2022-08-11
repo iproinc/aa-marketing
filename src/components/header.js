@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
   }, [windowSize.width])
 
   return (
-    <header className={`sticky w-full top-0 z-50 shadow ${scrollY > menuTriggerPoint ? "bg-white backdrop-filter backdrop-blur-md" : "bg-transparent" } transition-all ease-in-out duration-700 bg-opacity-90 text-san-marino-900`}>
+    <header className={`sticky w-full top-0 z-50  ${scrollY > menuTriggerPoint ? "bg-white backdrop-filter backdrop-blur-md shadow" : "bg-transparent" } transition-all ease-in-out duration-700 bg-opacity-90 text-san-marino-900`}>
       <div className="py-[15px] px-[10px]">
         <div className="relative w-full mx-auto flex flex-row justify-between items-center px-3">
           <Link to="/" className="py-[5px]">
