@@ -42,10 +42,12 @@ function AboutPage() {
           </div>
         </div>
       </section>
-      <Cta 
-        heading="Let Us Analyze Your Ads For You "
-        button="Start Your Free Trial"
-        finePrint="7-Day Free Trial. No Credit Card Required. Cancel Anytime."
+      <Cta
+        heading="Create An Account Today & Try Out Adtrics For Free."
+        subHeading="Still Need More Time?"
+        button="Get Started For Free"
+        finePrint="Free Forever. No Credit Card Required."
+        link="https://app.adtrics.com/product_sets/new"
       />
     </Layout>
   )

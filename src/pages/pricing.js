@@ -12,18 +12,18 @@ const PricingPage = () => (
   <Layout>
     <Seo title="Pricing" />
     <section>
-      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] bg-cover bg-bottom flex flex-col items-center py-12 gap-12 z-10" style={{ backgroundImage: `url(${BGimage})` }}>
+      <div className="relative h-full lg:mt-[-104px] lg:pt-40 md:min-h-[400px] bg-cover bg-bottom flex flex-col items-center py-24 gap-12 z-10">
         <div className="max-w-4xl w-full mx-auto px-6 flex flex-col items-center justify-center gap-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug drop-shadow-sm bg-clip-text text-center text-transparent bg-gradient-to-br from-san-marino-600 via-gray-800 to-mariner-600 p-2">Never Be Confused With Your Facebook Campaign Data Again</h1>
           <p className="text-base md:text-xl text-gray-500 text-center">Simple Pricing. <br className="md:hidden" /> Not Limited Be Ad Spend.</p>
         </div>
-        <div className="max-w-6xl w-full mx-auto md:px-6 md:flex flex-col text-gray-800 text-sm hidden">
+        <div className="max-w-6xl w-full mx-auto md:px-6 md:flex flex-col text-gray-800 text-sm rounded hidden">
           <div className="w-full flex flex-row">
             <div className="w-1/4"></div>
             {
               plans.map((plan, i) => {
                 return (
-                  <div key={i} className="w-1/4 flex flex-col">
+                  <div key={i} className={`w-1/4 flex flex-col`}>
                     <div className="p-2 xl:p-6 border-b border-gray-200  xl:text-xl font-semibold">
                       {plan.plan}
                     </div>
@@ -36,7 +36,7 @@ const PricingPage = () => (
                         {i === 2 ? <p className="font-medium text-xs px-1 py-[1px] bg-yellow-400 rounded inline-block text-black align-middle">Most Popular - Save 16%</p> : null}
                       </div>
                       <a href={plan.link} className="py-2 flex justify-center items-center rounded border border-mariner-600 text-white bg-mariner-500 hover:bg-mariner-600 hover:transition-all ease-in-out duration-300 hover:shadow-xl hover:-translate-y-2">
-                        <p>Select Plan</p>
+                        {plan.button}
                       </a>
                     </div>
                   </div>
@@ -48,7 +48,7 @@ const PricingPage = () => (
             {
               Object.keys(plans[0].features).map((feature, i) => {
                 return (
-                  <div key={i} className="flex flex-row odd:bg-gray-500/5">
+                  <div key={i} className={`flex flex-row odd:bg-san-marino-50`}>
                     <div className="p-6 w-1/4 flex justify-start items-center">
                       {feature}
                     </div>
@@ -57,13 +57,13 @@ const PricingPage = () => (
                         let values = Object.values(plan.features)
                         if(values[i] === true) {
                           return (
-                            <div key={j} className="py-6 w-1/4 flex justify-center items-center">
+                            <div key={j} className={`py-6 w-1/4 flex justify-center items-center`}>
                               <FontAwesomeIcon icon={["fas", "check-circle"]}/>
                             </div>
                           )
                         } else {
                           return (
-                            <div key={j} className="p-6 w-1/4 flex justify-center items-center">
+                            <div key={j} className={`p-6 w-1/4 flex justify-center items-center`}>
                               {values[i]}
                             </div>
                           )
@@ -97,7 +97,7 @@ const PricingPage = () => (
                         {
                           Object.keys(plan.features).map((feature, i) => {
                             return (
-                              <div key={i} className="flex flex-row odd:bg-gray-500/5">
+                              <div key={i} className="flex flex-row odd:bg-san-marino-50">
                                 <div className="w-1/2 p-4 flex justify-start items-center">
                                   {feature}
                                 </div>
@@ -115,7 +115,7 @@ const PricingPage = () => (
                         }
                       </div>
                       <a href={plan.link} className="py-2 flex justify-center items-center rounded border border-mariner-600 text-white bg-mariner-500 hover:bg-mariner-600 hover:transition-all ease-in-out duration-300 hover:shadow-xl hover:-translate-y-2">
-                        <p>Select Plan</p>
+                        {plan.button}
                       </a>
                     </div>
                   </div>
@@ -182,6 +182,7 @@ const PricingPage = () => (
       subHeading="Still Need More Time?"
       button="Get Started For Free"
       finePrint="Free Forever. No Credit Card Required."
+      link="https://app.adtrics.com/product_sets/new"
     />
   </Layout>
 )
@@ -251,7 +252,8 @@ const plans = [
   {
     plan: "FREE",
     price: "$0",
-    link: "./",
+    link: "http://app.adtrics.com/user/sign_up",
+    button: "Get Started",
     features: {
       "Facebook Ad Account Integration": true,
       "Shopify Product Data Integration": true,
@@ -265,7 +267,8 @@ const plans = [
   {
     plan: "3-Month Subscription",
     price: "$297",
-    link: "./",
+    link: "http://app.adtrics.com/user/sign_up?plan=3monthplan",
+    button: "Select Plan",
     features: {
       "Facebook Ad Account Integration": true,
       "Shopify Product Data Integration": true,
@@ -279,7 +282,8 @@ const plans = [
   {
     plan: "12-Month Subscription",
     price: "$997",
-    link: "./",
+    link: "http://app.adtrics.com/user/sign_up?plan=1yearplan",
+    button: "Select Plan",
     features: {
       "Facebook Ad Account Integration": true,
       "Shopify Product Data Integration": true,
