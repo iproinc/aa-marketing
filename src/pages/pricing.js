@@ -182,7 +182,7 @@ const PricingPage = () => (
       subHeading="Still Need More Time?"
       button="Get Started For Free"
       finePrint="Free Forever. No Credit Card Required."
-      link="https://app.adtrics.com/product_sets/new"
+      link="http://app.adtrics.com/user/sign_up"
     />
   </Layout>
 )

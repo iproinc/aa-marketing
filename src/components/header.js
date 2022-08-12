@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => {
             <Link to="/about">About</Link>
             <Link to="/pricing">Pricing</Link>
             <a href="https://app.adtrics.com/user/sign_in">Sign In</a>
-            <a className="py-[6px] px-3 h-[35px] rounded bg-mariner-500 text-white flex justify-center items-center" role="button" href="https://app.adtrics.com/product_sets/new">Go To App</a>
+            <a className="py-[6px] px-3 h-[35px] rounded bg-mariner-500 text-white flex justify-center items-center" role="button" href="https://app.adtrics.com/product_sets/new">Go To App <FontAwesomeIcon className="ml-2" icon={["fas", "long-arrow-alt-right"]}/></a>
           </div>
           <div className="md:hidden">
             <button onClick={() => setMenuToggle(!menuToggle)} className="w-6 h-6">
